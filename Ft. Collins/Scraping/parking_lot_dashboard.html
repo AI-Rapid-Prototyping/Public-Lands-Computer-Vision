@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gateway Natural Area Parking Status</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1220;
+      --bg2: #111a2d;
+      --panel: rgba(12, 18, 33, 0.78);
+      --panel-strong: rgba(18, 27, 47, 0.96);
+      --line: rgba(255, 255, 255, 0.08);
+      --text: #edf2ff;
+      --muted: #a8b3cf;
+      --accent: #8be9fd;
+      --accent-2: #7dd3fc;
+      --success: #4ade80;
+      --warning: #fbbf24;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "Aptos", "Trebuchet MS", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.22), transparent 34%),
+        radial-gradient(circle at right 20%, rgba(74, 222, 128, 0.16), transparent 24%),
+        linear-gradient(160deg, var(--bg), var(--bg2));
+    }
+
+    .wrap {
+      width: min(1280px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4.25rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.74rem;
+      margin-bottom: 10px;
+    }
+
+    .lede {
+      margin: 12px 0 0;
+      color: var(--muted);
+      max-width: 64ch;
+      line-height: 1.5;
+    }
+
+    .meta {
+      justify-self: end;
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .count-panel {
+      grid-column: span 4;
+      padding: 22px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .metric-block {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 18px;
+      padding: 14px 14px 16px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .capture-block {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 18px;
+      padding: 14px 14px 16px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .count {
+      font-size: clamp(4rem, 12vw, 7rem);
+      font-weight: 800;
+      letter-spacing: -0.08em;
+      line-height: 0.9;
+      margin-top: 4px;
+    }
+
+    .availability {
+      font-size: clamp(2.5rem, 7vw, 4.4rem);
+      font-weight: 800;
+      letter-spacing: -0.06em;
+      line-height: 0.95;
+      margin-top: 4px;
+    }
+
+    .availability-high {
+      color: var(--success);
+    }
+
+    .availability-medium {
+      color: var(--warning);
+    }
+
+    .availability-low {
+      color: #ef4444;
+    }
+
+    .capture-time {
+      font-size: clamp(1.5rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .capture-date {
+      font-size: clamp(1.3rem, 3.4vw, 2.1rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .count-label {
+      color: var(--muted);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      font-size: 0.88rem;
+    }
+
+    .pill strong {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .image-panel {
+      grid-column: span 8;
+      padding: 14px;
+    }
+
+    .image-shell {
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: var(--panel-strong);
+    }
+
+    .image-shell img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 720px;
+      object-fit: contain;
+      background: #0a0f1b;
+    }
+
+    .image-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 8px 2px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .section {
+      grid-column: span 12;
+      padding: 18px 20px 20px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-2);
+    }
+
+    .details {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .detail {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .detail span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .detail code {
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .detections {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .detection {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .detection .title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .detection strong {
+      font-size: 1rem;
+    }
+
+    .confidence {
+      color: var(--success);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .bbox {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+
+    .status {
+      color: var(--warning);
+    }
+
+    .empty {
+      color: var(--muted);
+      padding: 12px 2px 2px;
+    }
+
+    .fade-in {
+      animation: rise 500ms ease both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 960px) {
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .meta {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .count-panel,
+      .image-panel {
+        grid-column: span 12;
+      }
+
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="fade-in">
+      <div>
+        <div class="eyebrow">Fort Collins Parking Lot</div>
+        <h1>Gateway Natural Area Parking Status</h1>
+      </div>
+      <div class="meta">
+        <div><strong id="stamp">Loading snapshot</strong></div>
+        <div id="source">Source: ../gateway_latest_feed.json</div>
+        <div id="schema">Schema: gateway_vehicle_count_v1</div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel count-panel fade-in">
+        <div class="capture-block">
+          <div class="count-label">Last Update</div>
+          <div class="capture-date" id="captureDate">--</div>
+          <div class="capture-time" id="captureTime">--</div>
+        </div>
+        <div class="metric-grid">
+          <div class="metric-block">
+            <div class="count-label">Current vehicle count</div>
+            <div class="count" id="count">--</div>
+          </div>
+          <div class="metric-block">
+            <div class="count-label">Parking space availability</div>
+            <div class="availability" id="availability">--</div>
+          </div>
+        </div>
+        <div class="pill-row">
+          <div class="pill"><strong>Status</strong> <span id="status">--</span></div>
+        </div>
+      </section>
+
+      <section class="panel image-panel fade-in">
+        <div class="image-shell">
+          <img id="feedImage" src="../gateway_latest_annotated.jpg" alt="Annotated parking lot image" />
+        </div>
+        <div class="image-caption">
+          <span>Latest annotated camera image</span>
+          <span id="imageUrl">../gateway_latest_annotated.jpg</span>
+        </div>
+      </section>
+
+      <section class="panel section fade-in">
+        <h2>Snapshot Details</h2>
+        <div class="details">
+          <div class="detail">
+            <span>Timestamp UTC</span>
+            <code id="timestamp">--</code>
+          </div>
+          <div class="detail">
+            <span>Image URL</span>
+            <code id="image_url">--</code>
+          </div>
+          <div class="detail">
+            <span>Source Page</span>
+            <code id="source_url">--</code>
+          </div>
+          <div class="detail">
+            <span>Output File</span>
+            <code>Ft. Collins/gateway_latest_feed.json</code>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel section fade-in">
+        <h2>Detections</h2>
+        <div id="detections" class="detections"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const fallbackData = {
+      status: "ok",
+      timestamp_utc: "2026-07-17T19:41:23.619755+00:00",
+      source_page_url: "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
+      image_url: "https://public.senserasystems.com/public/media/M78031286A82/1784316909699.jpg",
+      vehicle_count: 4,
+      detections: [
+        {
+          class_name: "car",
+          confidence: 0.9051085710525513,
+          xyxy: [2393.729736328125, 1612.2421875, 2631.862060546875, 1762.0677490234375]
+        },
+        {
+          class_name: "car",
+          confidence: 0.8698854446411133,
+          xyxy: [363.82354736328125, 715.4164428710938, 517.045166015625, 778.5101318359375]
+        },
+        {
+          class_name: "car",
+          confidence: 0.7226583361625671,
+          xyxy: [1610.0341796875, 1233.06689453125, 1814.1998291015625, 1313.1407470703125]
+        },
+        {
+          class_name: "car",
+          confidence: 0.4625202715396881,
+          xyxy: [323.2479553222656, 676.7180786132812, 426.143798828125, 725.7134399414062]
+        }
+      ],
+      output_schema: "gateway_vehicle_count_v1"
+    };
+
+    const el = (id) => document.getElementById(id);
+
+    function formatPct(value) {
+      return `${Math.round(value * 1000) / 10}%`;
+    }
+
+    function classifyAvailability(vehicleCount) {
+      if (!Number.isFinite(vehicleCount)) return "--";
+      if (vehicleCount <= 6) return "High";
+      if (vehicleCount <= 11) return "Medium";
+      return "Low";
+    }
+
+    function formatCaptureTime(timestamp) {
+      const date = new Date(timestamp);
+      if (Number.isNaN(date.getTime())) return { formattedDate: "--", formattedTime: "--" };
+
+      const formattedDate = new Intl.DateTimeFormat("en-US", {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric"
+      }).format(date);
+
+      const formattedTime = new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+      }).format(date);
+
+      return { formattedDate, formattedTime };
+    }
+
+    function render(data) {
+      const vehicleCount = Number(data.vehicle_count);
+      el("count").textContent = Number.isFinite(vehicleCount) ? vehicleCount : "--";
+      el("status").textContent = data.status || "--";
+      const availability = classifyAvailability(vehicleCount);
+      el("availability").textContent = availability;
+      el("availability").className = `availability ${availability === "High" ? "availability-high" : availability === "Medium" ? "availability-medium" : "availability-low"}`;
+      el("timestamp").textContent = data.timestamp_utc || "--";
+      const capture = formatCaptureTime(data.timestamp_utc);
+      el("captureDate").textContent = capture.formattedDate || "--";
+      el("captureTime").textContent = capture.formattedTime || "--";
+      el("image_url").textContent = data.image_url || "--";
+      el("source_url").textContent = data.source_page_url || "--";
+      el("source").textContent = `Source page: ${data.source_page_url || "--"}`;
+      el("schema").textContent = `Schema: ${data.output_schema || "gateway_vehicle_count_v1"}`;
+      el("stamp").textContent = data.timestamp_utc ? `Captured ${data.timestamp_utc}` : "Loading snapshot";
+      el("imageUrl").textContent = data.image_url || "../gateway_latest_annotated.jpg";
+
+      const detections = Array.isArray(data.detections) ? data.detections : [];
+      const host = el("detections");
+      host.innerHTML = "";
+
+      if (!detections.length) {
+        host.innerHTML = '<div class="empty">No detections listed in the current snapshot.</div>';
+        return;
+      }
+
+      for (const detection of detections) {
+        const card = document.createElement("div");
+        card.className = "detection";
+        card.innerHTML = `
+          <div class="title">
+            <strong>${detection.class_name || "vehicle"}</strong>
+            <span class="confidence">${formatPct(detection.confidence || 0)}</span>
+          </div>
+          <div class="bbox">xyxy: ${Array.isArray(detection.xyxy) ? detection.xyxy.map((n) => Number(n).toFixed(2)).join(", ") : "n/a"}</div>
+        `;
+        host.appendChild(card);
+      }
+    }
+
+    async function loadSnapshot() {
+      try {
+        const response = await fetch("../gateway_latest_feed.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        render(data);
+      } catch (error) {
+        render(fallbackData);
+      }
+    }
+
+    loadSnapshot();
+  </script>
+</body>
+</html>
