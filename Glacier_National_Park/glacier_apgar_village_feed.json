@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-07-30T14:50:45.445960+00:00",
+  "timestamp_utc": "2026-07-30T14:55:44.607883+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 8,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.8377721309661865,
+      "confidence": 0.9015907645225525,
       "xyxy": [
-        170.21649169921875,
-        584.8814086914062,
-        407.0709228515625,
-        678.0665283203125
+        310.0562438964844,
+        505.620849609375,
+        714.0150756835938,
+        670.9823608398438
       ]
     },
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.524518609046936,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5322408080101013,
       "xyxy": [
-        141.32546997070312,
-        503.8091125488281,
-        710.2313232421875,
-        671.1826171875
+        828.6644897460938,
+        575.1734619140625,
+        879.26513671875,
+        610.3958129882812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5092955231666565,
+      "xyxy": [
+        1214.2913818359375,
+        571.5787353515625,
+        1278.5518798828125,
+        598.8290405273438
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5062713623046875,
+      "xyxy": [
+        1340.6502685546875,
+        573.2974243164062,
+        1416.371826171875,
+        606.293212890625
       ]
     }
   ],
-  "message": "Current queue 2, peak today 8",
+  "message": "Current queue 4, peak today 8",
   "error": null
 }
