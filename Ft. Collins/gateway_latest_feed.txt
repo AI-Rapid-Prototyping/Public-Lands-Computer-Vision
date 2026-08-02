@@ -1,12 +1,13 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-08-02T16:15:18.847826+00:00
+timestamp_utc: 2026-08-02T16:20:16.082687+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1785687007638.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1785687307577.jpg
 model_path: yolov8m.pt
-vehicle_count: 2
-message: Detected 2 vehicles anywhere in the frame
+vehicle_count: 3
+message: Detected 3 vehicles anywhere in the frame
 detections:
-- car (class_id=2, confidence=0.855) xyxy=[1571.496337890625, 1227.5484619140625, 1800.647705078125, 1336.6490478515625]
-- truck (class_id=7, confidence=0.534) xyxy=[290.5373840332031, 662.7201538085938, 489.0692138671875, 773.3821411132812]
+- car (class_id=2, confidence=0.882) xyxy=[1571.873291015625, 1227.0838623046875, 1801.2904052734375, 1337.1878662109375]
+- car (class_id=2, confidence=0.639) xyxy=[795.172119140625, 795.1643676757812, 888.1328735351562, 873.9337158203125]
+- truck (class_id=7, confidence=0.579) xyxy=[295.21527099609375, 662.833740234375, 489.6594543457031, 772.5254516601562]
 output_schema: gateway_vehicle_count_v1
