@@ -1,20 +1,28 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-08-02T00:11:13.037830+00:00
-total_vehicles_detected: 0
-daily_vehicle_count: 142
-hourly_vehicle_count: 0
+timestamp_utc: 2026-08-02T00:12:11.898543+00:00
+total_vehicles_detected: 8
+daily_vehicle_count: 144
+hourly_vehicle_count: 2
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 0
-vehicles_in_lane_4: 0
-vehicles_in_line: 0
-message: Detected 0 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=0, lane 4=0, in line=0, daily_vehicle_count=142, hourly_vehicle_count=0
-detections: none
+vehicles_in_lane_3: 4
+vehicles_in_lane_4: 3
+vehicles_in_line: 7
+message: Detected 8 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=4, lane 4=3, in line=7, daily_vehicle_count=144, hourly_vehicle_count=2
+detections:
+- car (class_id=2, confidence=0.889) xyxy=[642.53125, 405.92510986328125, 734.4000854492188, 562.6102294921875]
+- car (class_id=2, confidence=0.889) xyxy=[736.7310791015625, 309.67041015625, 801.7457275390625, 353.85137939453125]
+- car (class_id=2, confidence=0.723) xyxy=[676.4900512695312, 293.14630126953125, 717.8704833984375, 325.9546813964844]
+- car (class_id=2, confidence=0.664) xyxy=[895.3488159179688, 368.50164794921875, 988.3615112304688, 387.897705078125]
+- car (class_id=2, confidence=0.651) xyxy=[622.5390014648438, 335.0626525878906, 734.0694580078125, 455.22027587890625]
+- bus (class_id=5, confidence=0.646) xyxy=[711.5520629882812, 375.69873046875, 1023.0188598632812, 638.8037109375]
+- car (class_id=2, confidence=0.489) xyxy=[560.4279174804688, 261.03302001953125, 579.2135009765625, 273.4000244140625]
+- car (class_id=2, confidence=0.343) xyxy=[862.6217041015625, 338.12127685546875, 890.9068603515625, 378.7274475097656]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 0
-- vehicles_in_lane_4: 0
-- vehicles_in_line: 0
+- vehicles_in_lane_3: 4
+- vehicles_in_lane_4: 3
+- vehicles_in_line: 7
 output_schema: grca_lane_vehicle_feed_v2
