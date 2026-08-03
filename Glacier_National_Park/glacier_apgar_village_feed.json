@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-03T20:50:46.166431+00:00",
+  "timestamp_utc": "2026-08-03T20:55:44.660790+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
-  "detected_vehicle_count": 3,
-  "current_queue": 3,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 9,
   "parking_spots_total": null,
@@ -17,37 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.873490035533905,
+      "confidence": 0.9094898700714111,
       "xyxy": [
-        1793.2987060546875,
-        643.199951171875,
-        1919.5279541015625,
-        760.5181884765625
+        1793.6357421875,
+        643.5675659179688,
+        1919.4200439453125,
+        760.2709350585938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8102543354034424,
+      "xyxy": [
+        975.5357666015625,
+        588.7513427734375,
+        1089.9781494140625,
+        664.4735107421875
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.6814014315605164,
+      "confidence": 0.6531990170478821,
       "xyxy": [
-        880.510986328125,
-        574.4984130859375,
-        1031.7366943359375,
-        672.7368774414062
+        1530.531494140625,
+        611.6101684570312,
+        1767.8614501953125,
+        733.1927490234375
       ]
     },
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.6450254917144775,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5362143516540527,
       "xyxy": [
-        1530.9158935546875,
-        611.1866455078125,
-        1768.2835693359375,
-        733.2951049804688
+        882.8280029296875,
+        578.3577270507812,
+        924.1799926757812,
+        606.9285888671875
       ]
     }
   ],
-  "message": "Current queue 3, peak today 9",
+  "message": "Current queue 4, peak today 9",
   "error": null
 }
