@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-03T15:45:51.418169+00:00",
+  "timestamp_utc": "2026-08-03T15:50:41.942851+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 6,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8454349040985107,
+      "confidence": 0.8407620191574097,
       "xyxy": [
-        978.5612182617188,
-        581.3259887695312,
-        1032.962890625,
-        614.9573974609375
+        978.759521484375,
+        581.1718139648438,
+        1032.8851318359375,
+        615.0185546875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8084025979042053,
+      "xyxy": [
+        919.919677734375,
+        580.2650756835938,
+        968.0132446289062,
+        612.73095703125
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.642500638961792,
+      "confidence": 0.7018376588821411,
       "xyxy": [
-        1418.0350341796875,
-        601.3740844726562,
-        1666.1158447265625,
-        710.3173828125
+        1418.4873046875,
+        603.4191284179688,
+        1628.74951171875,
+        710.2119140625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5941851139068604,
+      "xyxy": [
+        902.244140625,
+        573.6895751953125,
+        935.914306640625,
+        600.353271484375
       ]
     }
   ],
-  "message": "Current queue 2, peak today 6",
+  "message": "Current queue 4, peak today 6",
   "error": null
 }
