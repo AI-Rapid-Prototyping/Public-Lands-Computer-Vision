@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-07T17:20:32.592461+00:00",
+  "timestamp_utc": "2026-08-07T17:25:42.834265+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": {
     "left_lane": 1,
-    "right_lane": 0
+    "right_lane": 4
   },
   "peak_queue_today": 13,
   "parking_spots_total": null,
@@ -20,15 +20,59 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5936432480812073,
+      "confidence": 0.8880792856216431,
       "xyxy": [
-        276.1550598144531,
-        601.76513671875,
-        344.4617004394531,
-        656.1602783203125
+        1033.7086181640625,
+        565.9337768554688,
+        1290.7711181640625,
+        727.3950805664062
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8334347009658813,
+      "xyxy": [
+        1223.234130859375,
+        547.5448608398438,
+        1284.1456298828125,
+        582.1173095703125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7769797444343567,
+      "xyxy": [
+        1431.9332275390625,
+        543.10205078125,
+        1462.2689208984375,
+        564.9105224609375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7217351198196411,
+      "xyxy": [
+        954.1685180664062,
+        570.4844360351562,
+        978.22216796875,
+        609.7620849609375
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.6152344346046448,
+      "xyxy": [
+        140.46450805664062,
+        554.9481201171875,
+        310.8694152832031,
+        668.9808349609375
       ]
     }
   ],
-  "message": "Current queue 1, peak today 13",
+  "message": "Current queue 5, peak today 13",
   "error": null
 }
