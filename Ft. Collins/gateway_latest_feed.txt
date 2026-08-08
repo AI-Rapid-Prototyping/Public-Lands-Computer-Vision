@@ -1,17 +1,15 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-08-08T15:45:14.871190+00:00
+timestamp_utc: 2026-08-08T15:50:14.543907+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1786203621561.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1786203909908.jpg
 model_path: yolov8m.pt
-vehicle_count: 7
-message: Detected 7 vehicles anywhere in the frame
+vehicle_count: 5
+message: Detected 5 vehicles anywhere in the frame
 detections:
-- car (class_id=2, confidence=0.818) xyxy=[357.4967956542969, 713.8130493164062, 504.6341552734375, 783.8801879882812]
-- car (class_id=2, confidence=0.815) xyxy=[602.6973876953125, 896.9271850585938, 826.1554565429688, 982.6080322265625]
-- car (class_id=2, confidence=0.771) xyxy=[545.2612915039062, 860.2130737304688, 745.5658569335938, 929.1063232421875]
-- car (class_id=2, confidence=0.762) xyxy=[741.1759033203125, 765.2224731445312, 839.8195190429688, 843.2500610351562]
-- car (class_id=2, confidence=0.711) xyxy=[501.2398986816406, 811.2683715820312, 687.610595703125, 877.862060546875]
-- car (class_id=2, confidence=0.572) xyxy=[291.29290771484375, 681.5729370117188, 497.6274108886719, 736.7969970703125]
-- truck (class_id=7, confidence=0.533) xyxy=[1554.5069580078125, 1216.4295654296875, 1831.39208984375, 1337.984375]
+- car (class_id=2, confidence=0.834) xyxy=[545.1385498046875, 860.583740234375, 745.1282348632812, 928.3277587890625]
+- car (class_id=2, confidence=0.816) xyxy=[357.31842041015625, 715.0009765625, 504.2245178222656, 783.5968017578125]
+- car (class_id=2, confidence=0.813) xyxy=[601.97607421875, 897.7228393554688, 826.87158203125, 986.0293579101562]
+- car (class_id=2, confidence=0.708) xyxy=[498.8697204589844, 814.7296752929688, 685.3598022460938, 882.9860229492188]
+- truck (class_id=7, confidence=0.657) xyxy=[1553.5843505859375, 1216.2418212890625, 1831.232421875, 1337.720703125]
 output_schema: gateway_vehicle_count_v1
