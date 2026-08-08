@@ -1,35 +1,68 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-08T16:50:15.797727+00:00",
+  "timestamp_utc": "2026-08-08T16:55:13.916707+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1786207507621.jpg",
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1786207807572.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
+  "vehicle_count": 5,
   "detections": [
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7388531565666199,
+      "confidence": 0.7657455205917358,
       "xyxy": [
-        1684.7064208984375,
-        1293.912109375,
-        1910.6195068359375,
-        1386.142578125
+        1685.250244140625,
+        1286.6295166015625,
+        1922.0540771484375,
+        1387.1217041015625
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.5798299312591553,
+      "confidence": 0.6108059287071228,
       "xyxy": [
-        1554.728271484375,
-        1208.131103515625,
-        1826.406005859375,
-        1327.2005615234375
+        1554.4705810546875,
+        1208.3525390625,
+        1834.409912109375,
+        1327.6185302734375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5006853342056274,
+      "xyxy": [
+        496.2580261230469,
+        807.7463989257812,
+        746.742919921875,
+        917.5486450195312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.4840305745601654,
+      "xyxy": [
+        1552.2462158203125,
+        1207.826416015625,
+        1835.617431640625,
+        1327.8956298828125
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.45728999376296997,
+      "xyxy": [
+        493.4664611816406,
+        798.9766845703125,
+        746.9746704101562,
+        916.287109375
       ]
     }
   ],
-  "message": "Detected 2 vehicles anywhere in the frame",
+  "message": "Detected 5 vehicles anywhere in the frame",
   "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
