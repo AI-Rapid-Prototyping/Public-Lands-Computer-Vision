@@ -1,46 +1,57 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-08T00:35:12.983860+00:00",
+  "timestamp_utc": "2026-08-08T00:40:14.232159+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1786149025002.jpg",
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1786149326891.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
+  "vehicle_count": 4,
   "detections": [
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7881826162338257,
+      "confidence": 0.7500659823417664,
       "xyxy": [
-        1778.324462890625,
-        1312.5997314453125,
-        2014.54931640625,
-        1424.7711181640625
+        1777.2418212890625,
+        1313.1002197265625,
+        2042.722900390625,
+        1426.5982666015625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.6096335649490356,
+      "xyxy": [
+        604.169677734375,
+        699.9346923828125,
+        694.386962890625,
+        762.28857421875
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5636699199676514,
+      "confidence": 0.556327760219574,
       "xyxy": [
-        284.2274169921875,
-        665.8878784179688,
-        443.5413818359375,
-        717.5328369140625
+        364.0157165527344,
+        706.9232177734375,
+        495.11871337890625,
+        774.6550903320312
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5611315965652466,
+      "confidence": 0.49063462018966675,
       "xyxy": [
-        364.60260009765625,
-        705.6288452148438,
-        524.2453002929688,
-        780.55859375
+        285.278076171875,
+        667.938720703125,
+        439.3810729980469,
+        717.818115234375
       ]
     }
   ],
-  "message": "Detected 3 vehicles anywhere in the frame",
+  "message": "Detected 4 vehicles anywhere in the frame",
   "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
