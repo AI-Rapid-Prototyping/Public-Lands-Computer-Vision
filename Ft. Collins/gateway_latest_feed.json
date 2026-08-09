@@ -1,35 +1,12 @@
 {
-  "status": "ok",
-  "timestamp_utc": "2026-08-08T23:50:13.116205+00:00",
+  "status": "error",
+  "timestamp_utc": "2026-08-09T00:02:50.389289+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1786232712569.jpg",
+  "image_url": null,
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detections": [
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8895712494850159,
-      "xyxy": [
-        1623.715576171875,
-        1221.9686279296875,
-        1830.6715087890625,
-        1333.113037109375
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8626849055290222,
-      "xyxy": [
-        651.028564453125,
-        904.269775390625,
-        846.9356079101562,
-        988.2102661132812
-      ]
-    }
-  ],
-  "message": "Detected 2 vehicles anywhere in the frame",
-  "error": null,
+  "vehicle_count": 0,
+  "detections": [],
+  "message": null,
+  "error": "403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras\nTraceback (most recent call last):\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connection.py\", line 198, in _new_conn\n    sock = connection.create_connection(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/util/connection.py\", line 85, in create_connection\n    raise err\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/util/connection.py\", line 73, in create_connection\n    sock.connect(sa)\nTimeoutError: timed out\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connectionpool.py\", line 787, in urlopen\n    response = self._make_request(\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connectionpool.py\", line 488, in _make_request\n    raise new_e\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connectionpool.py\", line 464, in _make_request\n    self._validate_conn(conn)\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connectionpool.py\", line 1093, in _validate_conn\n    conn.connect()\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connection.py\", line 704, in connect\n    self.sock = sock = self._new_conn()\n                       ^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connection.py\", line 207, in _new_conn\n    raise ConnectTimeoutError(\nurllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fbe944a6510>, 'Connection to public.senserasystems.com timed out. (connect timeout=15)')\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/databricks/python/lib/python3.12/site-packages/requests/adapters.py\", line 667, in send\n    resp = conn.urlopen(\n           ^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n              ^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/urllib3/util/retry.py\", line 519, in increment\n    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='public.senserasystems.com', port=443): Max retries exceeded with url: /public/latestPic/M78031286A82 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fbe944a6510>, 'Connection to public.senserasystems.com timed out. (connect timeout=15)'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 473, in <module>\n    image, image_url = resolve_sensera_latest_image(headers)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 153, in resolve_sensera_latest_image\n    filename = fetch_bytes(LATEST_PIC_URL, headers=headers).text.strip()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 97, in fetch_bytes\n    response = requests.get(url, headers=headers, timeout=timeout)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/requests/api.py\", line 73, in get\n    return request(\"get\", url, params=params, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/requests/sessions.py\", line 589, in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/requests/sessions.py\", line 703, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/databricks/python/lib/python3.12/site-packages/requests/adapters.py\", line 688, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='public.senserasystems.com', port=443): Max retries exceeded with url: /public/latestPic/M78031286A82 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fbe944a6510>, 'Connection to public.senserasystems.com timed out. (connect timeout=15)'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 475, in <module>\n    image, image_url = resolve_image_url([SNAPSHOT_URL, SOURCE_PAGE_URL], headers)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 169, in resolve_image_url\n    response = fetch_bytes(url, headers=headers)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 98, in fetch_bytes\n    response.raise_for_status()\n  File \"/databricks/python/lib/python3.12/site-packages/requests/models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras\n",
   "output_schema": "gateway_vehicle_count_v1"
 }
