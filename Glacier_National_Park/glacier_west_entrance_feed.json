@@ -1,34 +1,67 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-10T22:20:37.527815+00:00",
+  "timestamp_utc": "2026-08-10T22:25:36.510335+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 1
+    "left_lane": 1,
+    "right_lane": 3
   },
   "peak_queue_today": 12,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.9171180129051208,
+      "xyxy": [
+        953.402099609375,
+        597.1309814453125,
+        1234.729248046875,
+        765.43310546875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7006679773330688,
+      "xyxy": [
+        0.3014945983886719,
+        591.3233032226562,
+        115.94256591796875,
+        685.4378662109375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6778401732444763,
+      "xyxy": [
+        1368.660888671875,
+        562.9444580078125,
+        1419.8773193359375,
+        600.1435546875
+      ]
+    },
+    {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.7740375995635986,
+      "confidence": 0.604411780834198,
       "xyxy": [
-        1382.18994140625,
-        542.23193359375,
-        1431.2408447265625,
-        588.9202270507812
+        1396.959228515625,
+        544.598388671875,
+        1436.3961181640625,
+        578.738525390625
       ]
     }
   ],
-  "message": "Current queue 1, peak today 12",
+  "message": "Current queue 4, peak today 12",
   "error": null
 }
