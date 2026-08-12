@@ -1,24 +1,25 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-08-12T23:57:12.668329+00:00
-total_vehicles_detected: 4
+timestamp_utc: 2026-08-12T23:58:12.850084+00:00
+total_vehicles_detected: 5
 daily_vehicle_count: 141
 hourly_vehicle_count: 10
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
 vehicles_in_lane_3: 2
-vehicles_in_lane_4: 2
-vehicles_in_line: 4
-message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=2, lane 4=2, in line=4, daily_vehicle_count=141, hourly_vehicle_count=10
+vehicles_in_lane_4: 3
+vehicles_in_line: 5
+message: Detected 5 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=2, lane 4=3, in line=5, daily_vehicle_count=141, hourly_vehicle_count=10
 detections:
-- car (class_id=2, confidence=0.846) xyxy=[853.4778442382812, 350.0243225097656, 949.8727416992188, 415.70849609375]
-- car (class_id=2, confidence=0.734) xyxy=[688.7669677734375, 513.0530395507812, 887.9827270507812, 639.8914794921875]
-- truck (class_id=7, confidence=0.513) xyxy=[736.0735473632812, 493.05633544921875, 1023.4622192382812, 639.6915283203125]
-- truck (class_id=7, confidence=0.368) xyxy=[990.5973510742188, 392.49072265625, 1023.77294921875, 445.98760986328125]
+- car (class_id=2, confidence=0.911) xyxy=[648.3511962890625, 420.5033264160156, 877.4771728515625, 638.5701904296875]
+- car (class_id=2, confidence=0.850) xyxy=[583.9451293945312, 312.4044494628906, 641.9381713867188, 368.19854736328125]
+- truck (class_id=7, confidence=0.840) xyxy=[643.3128662109375, 267.9219055175781, 683.8728637695312, 305.7881164550781]
+- car (class_id=2, confidence=0.491) xyxy=[985.1349487304688, 382.58160400390625, 1023.7572021484375, 455.7509765625]
+- truck (class_id=7, confidence=0.463) xyxy=[985.2301025390625, 382.58367919921875, 1023.7843627929688, 455.6893615722656]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
 - vehicles_in_lane_3: 2
-- vehicles_in_lane_4: 2
-- vehicles_in_line: 4
+- vehicles_in_lane_4: 3
+- vehicles_in_line: 5
 output_schema: grca_lane_vehicle_feed_v2
