@@ -1,34 +1,67 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-12T00:25:34.426835+00:00",
+  "timestamp_utc": "2026-08-12T00:30:41.863766+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 1
+    "left_lane": 1,
+    "right_lane": 3
   },
   "peak_queue_today": 4,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.8960503339767456,
+      "xyxy": [
+        684.0658569335938,
+        590.71435546875,
+        1144.0440673828125,
+        826.346435546875
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7062272429466248,
+      "xyxy": [
+        1330.2529296875,
+        563.1717529296875,
+        1399.2464599609375,
+        615.6195678710938
+      ]
+    },
+    {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9472337961196899,
+      "confidence": 0.6107360124588013,
       "xyxy": [
-        597.5980834960938,
-        647.4282836914062,
-        1024.7166748046875,
-        888.2608032226562
+        282.9102783203125,
+        606.1024169921875,
+        310.2629089355469,
+        654.6729736328125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5832484364509583,
+      "xyxy": [
+        1439.861083984375,
+        545.6254272460938,
+        1467.99462890625,
+        571.4232788085938
       ]
     }
   ],
-  "message": "Current queue 1, peak today 4",
+  "message": "Current queue 4, peak today 4",
   "error": null
 }
