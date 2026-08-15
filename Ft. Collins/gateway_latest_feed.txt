@@ -1,16 +1,17 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-08-15T19:30:16.070290+00:00
+timestamp_utc: 2026-08-15T19:35:14.994002+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1786821922668.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1786822223447.jpg
 model_path: yolov8m.pt
-vehicle_count: 6
-message: Detected 6 vehicles anywhere in the frame
+vehicle_count: 7
+message: Detected 7 vehicles anywhere in the frame
 detections:
-- car (class_id=2, confidence=0.908) xyxy=[2372.515380859375, 1608.062255859375, 2639.567138671875, 1746.3194580078125]
-- car (class_id=2, confidence=0.866) xyxy=[500.8757629394531, 834.1058349609375, 690.3197021484375, 904.2542114257812]
-- car (class_id=2, confidence=0.818) xyxy=[1683.875, 1265.371826171875, 1907.27197265625, 1381.3214111328125]
-- truck (class_id=7, confidence=0.816) xyxy=[2665.9951171875, 1731.3563232421875, 3052.5478515625, 1947.630615234375]
-- car (class_id=2, confidence=0.805) xyxy=[370.2702941894531, 717.5570068359375, 546.37548828125, 789.9767456054688]
-- truck (class_id=7, confidence=0.581) xyxy=[3081.28076171875, 1923.60595703125, 3263.432861328125, 2152.365966796875]
+- car (class_id=2, confidence=0.912) xyxy=[2370.517822265625, 1607.191650390625, 2635.94921875, 1746.51220703125]
+- car (class_id=2, confidence=0.850) xyxy=[502.3219909667969, 833.9382934570312, 691.1304321289062, 903.8992919921875]
+- truck (class_id=7, confidence=0.846) xyxy=[2665.836669921875, 1731.51904296875, 3052.37451171875, 1947.1014404296875]
+- car (class_id=2, confidence=0.827) xyxy=[368.7787170410156, 711.6974487304688, 546.392822265625, 790.0317993164062]
+- car (class_id=2, confidence=0.809) xyxy=[1683.0709228515625, 1262.1927490234375, 1907.239990234375, 1380.19775390625]
+- car (class_id=2, confidence=0.767) xyxy=[589.8305053710938, 677.6578369140625, 699.765625, 726.825927734375]
+- truck (class_id=7, confidence=0.665) xyxy=[3078.98583984375, 1921.344970703125, 3263.447998046875, 2149.30908203125]
 output_schema: gateway_vehicle_count_v1
