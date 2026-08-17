@@ -1,24 +1,24 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-08-17T21:28:12.672180+00:00
+timestamp_utc: 2026-08-17T21:29:13.031089+00:00
 total_vehicles_detected: 4
-daily_vehicle_count: 96
-hourly_vehicle_count: 3
+daily_vehicle_count: 97
+hourly_vehicle_count: 4
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 2
-vehicles_in_lane_3: 0
-vehicles_in_lane_4: 2
-vehicles_in_line: 4
-message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=2, lane 3=0, lane 4=2, in line=4, daily_vehicle_count=96, hourly_vehicle_count=3
+vehicles_in_lane_2: 0
+vehicles_in_lane_3: 1
+vehicles_in_lane_4: 1
+vehicles_in_line: 2
+message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=1, lane 4=1, in line=2, daily_vehicle_count=97, hourly_vehicle_count=4
 detections:
-- bus (class_id=5, confidence=0.955) xyxy=[0.650146484375, 256.5130920410156, 317.35711669921875, 612.7120971679688]
-- car (class_id=2, confidence=0.819) xyxy=[773.4378662109375, 320.3879699707031, 832.0584106445312, 370.5014953613281]
-- car (class_id=2, confidence=0.671) xyxy=[687.923095703125, 293.14154052734375, 736.0467529296875, 329.0480041503906]
-- car (class_id=2, confidence=0.316) xyxy=[498.47601318359375, 306.2725524902344, 531.9417724609375, 326.83154296875]
+- car (class_id=2, confidence=0.929) xyxy=[615.8043212890625, 397.086181640625, 751.3900146484375, 505.21783447265625]
+- motorcycle (class_id=3, confidence=0.795) xyxy=[949.3880615234375, 385.12066650390625, 1000.9230346679688, 442.3802185058594]
+- car (class_id=2, confidence=0.485) xyxy=[584.2528076171875, 255.5788116455078, 596.2659301757812, 266.1331481933594]
+- car (class_id=2, confidence=0.324) xyxy=[629.7886962890625, 256.38299560546875, 642.3458862304688, 266.50201416015625]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 2
-- vehicles_in_lane_3: 0
-- vehicles_in_lane_4: 2
-- vehicles_in_line: 4
+- vehicles_in_lane_2: 0
+- vehicles_in_lane_3: 1
+- vehicles_in_lane_4: 1
+- vehicles_in_line: 2
 output_schema: grca_lane_vehicle_feed_v2
