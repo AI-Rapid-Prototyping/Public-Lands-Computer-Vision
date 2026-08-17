@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-17T22:05:38.208850+00:00",
+  "timestamp_utc": "2026-08-17T22:10:33.874894+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
-  "detected_vehicle_count": 3,
-  "current_queue": 3,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 0,
+    "left_lane": 1,
     "right_lane": 3
   },
   "peak_queue_today": 12,
@@ -20,37 +20,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9097318053245544,
+      "confidence": 0.9479326605796814,
       "xyxy": [
-        1086.7999267578125,
-        596.060791015625,
-        1278.2843017578125,
-        718.7686157226562
+        374.6356201171875,
+        652.7362060546875,
+        953.1522827148438,
+        954.2523193359375
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.8330253958702087,
+      "confidence": 0.8216404318809509,
       "xyxy": [
-        1353.0791015625,
-        556.0773315429688,
-        1417.9627685546875,
-        608.6856689453125
+        1327.66064453125,
+        557.7152099609375,
+        1402.1220703125,
+        618.8623657226562
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7489897012710571,
+      "confidence": 0.7159696817398071,
       "xyxy": [
-        1406.2127685546875,
-        543.8585815429688,
-        1436.3641357421875,
-        566.37548828125
+        1434.6513671875,
+        545.4505004882812,
+        1469.0980224609375,
+        571.2573852539062
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.677635133266449,
+      "xyxy": [
+        1111.5086669921875,
+        547.1981201171875,
+        1198.1845703125,
+        593.5779418945312
       ]
     }
   ],
-  "message": "Current queue 3, peak today 12",
+  "message": "Current queue 4, peak today 12",
   "error": null
 }
