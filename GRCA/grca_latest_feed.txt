@@ -1,24 +1,26 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-08-19T20:28:12.391753+00:00
-total_vehicles_detected: 4
-daily_vehicle_count: 100
-hourly_vehicle_count: 5
+timestamp_utc: 2026-08-19T20:29:12.998960+00:00
+total_vehicles_detected: 6
+daily_vehicle_count: 102
+hourly_vehicle_count: 7
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 0
-vehicles_in_lane_3: 3
+vehicles_in_lane_2: 2
+vehicles_in_lane_3: 2
 vehicles_in_lane_4: 1
-vehicles_in_line: 4
-message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=3, lane 4=1, in line=4, daily_vehicle_count=100, hourly_vehicle_count=5
+vehicles_in_line: 5
+message: Detected 6 vehicles anywhere in frame; lane 1=0, lane 2=2, lane 3=2, lane 4=1, in line=5, daily_vehicle_count=102, hourly_vehicle_count=7
 detections:
-- car (class_id=2, confidence=0.796) xyxy=[635.6808471679688, 272.882568359375, 661.458984375, 294.08270263671875]
-- truck (class_id=7, confidence=0.771) xyxy=[606.9557495117188, 385.2781677246094, 772.5338745117188, 546.1904907226562]
-- car (class_id=2, confidence=0.770) xyxy=[591.2418212890625, 285.15997314453125, 621.5753784179688, 308.771484375]
-- car (class_id=2, confidence=0.517) xyxy=[608.0501098632812, 348.8837890625, 695.1170043945312, 413.94940185546875]
+- car (class_id=2, confidence=0.928) xyxy=[682.9295654296875, 477.21209716796875, 931.89990234375, 639.7784423828125]
+- truck (class_id=7, confidence=0.878) xyxy=[72.8568115234375, 348.201904296875, 295.3219299316406, 494.81646728515625]
+- car (class_id=2, confidence=0.849) xyxy=[674.9388427734375, 292.32550048828125, 708.7146606445312, 318.47650146484375]
+- truck (class_id=7, confidence=0.751) xyxy=[566.74560546875, 257.9334411621094, 592.9598388671875, 287.4812927246094]
+- car (class_id=2, confidence=0.669) xyxy=[608.2852783203125, 264.03228759765625, 624.4510498046875, 276.2986755371094]
+- truck (class_id=7, confidence=0.652) xyxy=[218.95639038085938, 267.476318359375, 396.201416015625, 405.46826171875]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 3
+- vehicles_in_lane_2: 2
+- vehicles_in_lane_3: 2
 - vehicles_in_lane_4: 1
-- vehicles_in_line: 4
+- vehicles_in_line: 5
 output_schema: grca_lane_vehicle_feed_v2
