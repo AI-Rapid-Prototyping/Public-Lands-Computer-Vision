@@ -1,78 +1,45 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-21T21:45:38.914207+00:00",
+  "timestamp_utc": "2026-08-21T21:50:33.688415+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 5,
-  "detected_vehicle_count": 5,
-  "current_queue": 5,
+  "vehicle_count": 2,
+  "detected_vehicle_count": 2,
+  "current_queue": 2,
   "current_queue_by_lane": {
-    "left_lane": 2,
-    "right_lane": 3
+    "left_lane": 0,
+    "right_lane": 2
   },
   "peak_queue_today": 11,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 3,
-      "class_name": "motorcycle",
-      "confidence": 0.9345715045928955,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8738014101982117,
       "xyxy": [
-        296.9239196777344,
-        707.027587890625,
-        625.8907470703125,
-        975.0485229492188
+        916.0886840820312,
+        601.2468872070312,
+        1194.87255859375,
+        771.5179443359375
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9164092540740967,
+      "confidence": 0.7673435807228088,
       "xyxy": [
-        68.13812255859375,
-        594.894775390625,
-        318.7512512207031,
-        711.4124145507812
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8132458329200745,
-      "xyxy": [
-        1152.002197265625,
-        546.2879638671875,
-        1215.960205078125,
-        579.9503784179688
-      ]
-    },
-    {
-      "class_id": 3,
-      "class_name": "motorcycle",
-      "confidence": 0.573796272277832,
-      "xyxy": [
-        1367.92236328125,
-        563.05078125,
-        1393.2891845703125,
-        595.4251708984375
-      ]
-    },
-    {
-      "class_id": 3,
-      "class_name": "motorcycle",
-      "confidence": 0.5618045330047607,
-      "xyxy": [
-        1152.368896484375,
-        610.8438720703125,
-        1231.51904296875,
-        687.6488647460938
+        1330.703369140625,
+        543.9456176757812,
+        1373.091064453125,
+        572.1371459960938
       ]
     }
   ],
-  "message": "Current queue 5, peak today 11",
+  "message": "Current queue 2, peak today 11",
   "error": null
 }
