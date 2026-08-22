@@ -1,12 +1,101 @@
 {
-  "status": "error",
-  "timestamp_utc": "2026-08-22T21:35:13.910722+00:00",
+  "status": "ok",
+  "timestamp_utc": "2026-08-22T21:40:13.242716+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": null,
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1787434526368.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detections": [],
-  "message": null,
-  "error": "403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras\nTraceback (most recent call last):\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 473, in <module>\n    image, image_url = resolve_sensera_latest_image(headers)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 155, in resolve_sensera_latest_image\n    raise ValueError(\"Sensera latestPic endpoint returned an empty filename\")\nValueError: Sensera latestPic endpoint returned an empty filename\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 475, in <module>\n    image, image_url = resolve_image_url([SNAPSHOT_URL, SOURCE_PAGE_URL], headers)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 169, in resolve_image_url\n    response = fetch_bytes(url, headers=headers)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py\", line 98, in fetch_bytes\n    response.raise_for_status()\n  File \"/databricks/python/lib/python3.12/site-packages/requests/models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras\n",
+  "vehicle_count": 8,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8948410749435425,
+      "xyxy": [
+        1693.3173828125,
+        1314.04150390625,
+        1937.59375,
+        1414.041259765625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8541882634162903,
+      "xyxy": [
+        1539.8214111328125,
+        1217.1593017578125,
+        1755.3204345703125,
+        1317.1693115234375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7240970134735107,
+      "xyxy": [
+        343.1920471191406,
+        705.2251586914062,
+        453.08660888671875,
+        768.1521606445312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7007628679275513,
+      "xyxy": [
+        569.0868530273438,
+        863.9365234375,
+        858.9868774414062,
+        980.488525390625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6110599040985107,
+      "xyxy": [
+        510.5072326660156,
+        833.5835571289062,
+        664.8587036132812,
+        893.881103515625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5727192759513855,
+      "xyxy": [
+        2300.58935546875,
+        1581.4581298828125,
+        2650.301025390625,
+        1755.5037841796875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5527142286300659,
+      "xyxy": [
+        475.75537109375,
+        805.4091796875,
+        663.8563232421875,
+        858.8502197265625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5016767978668213,
+      "xyxy": [
+        2301.216552734375,
+        1581.1839599609375,
+        2648.08056640625,
+        1755.4991455078125
+      ]
+    }
+  ],
+  "message": "Detected 8 vehicles anywhere in the frame",
+  "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
