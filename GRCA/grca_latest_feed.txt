@@ -1,24 +1,20 @@
 Grand Canyon South Entrance webcam vehicle feed
-status: ok
-timestamp_utc: 2026-08-24T21:41:13.790157+00:00
-total_vehicles_detected: 4
+status: error
+timestamp_utc: 2026-08-24T21:42:34.687201+00:00
+total_vehicles_detected: 0
 daily_vehicle_count: 77
-hourly_vehicle_count: 9
-vehicles_in_lane_1: 1
+hourly_vehicle_count: 0
+vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 1
+vehicles_in_lane_3: 0
 vehicles_in_lane_4: 0
-vehicles_in_line: 2
-message: Detected 4 vehicles anywhere in frame; lane 1=1, lane 2=0, lane 3=1, lane 4=0, in line=2, daily_vehicle_count=77, hourly_vehicle_count=9
-detections:
-- car (class_id=2, confidence=0.948) xyxy=[671.3858642578125, 476.5326232910156, 933.7567138671875, 639.7326049804688]
-- car (class_id=2, confidence=0.680) xyxy=[494.61834716796875, 262.3382873535156, 517.2566528320312, 276.36688232421875]
-- car (class_id=2, confidence=0.677) xyxy=[456.9961853027344, 263.0523376464844, 490.74871826171875, 286.292236328125]
-- car (class_id=2, confidence=0.563) xyxy=[515.4652099609375, 257.1797790527344, 534.982421875, 273.41925048828125]
+vehicles_in_line: 0
+error: HTTPSConnectionPool(host='www.nps.gov', port=443): Read timed out. (read timeout=10)
+detections: none
 lane_breakdown:
-- vehicles_in_lane_1: 1
+- vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 1
+- vehicles_in_lane_3: 0
 - vehicles_in_lane_4: 0
-- vehicles_in_line: 2
+- vehicles_in_line: 0
 output_schema: grca_lane_vehicle_feed_v2
