@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-24T22:55:34.890717+00:00",
+  "timestamp_utc": "2026-08-24T23:00:49.956665+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 1,
-    "right_lane": 1
+    "left_lane": 0,
+    "right_lane": 4
   },
   "peak_queue_today": 12,
   "parking_spots_total": null,
@@ -20,26 +20,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7961552143096924,
+      "confidence": 0.95174241065979,
       "xyxy": [
-        1302.3802490234375,
-        541.204345703125,
-        1355.3587646484375,
-        575.878662109375
+        602.7781372070312,
+        636.4605102539062,
+        1044.7386474609375,
+        880.163330078125
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5395311117172241,
+      "confidence": 0.7283962965011597,
       "xyxy": [
-        218.7693328857422,
-        554.20166015625,
-        309.2250061035156,
-        642.40966796875
+        1412.02392578125,
+        551.6852416992188,
+        1445.0811767578125,
+        576.650146484375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6613529920578003,
+      "xyxy": [
+        1344.9739990234375,
+        565.755615234375,
+        1401.667724609375,
+        609.713134765625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6534655690193176,
+      "xyxy": [
+        953.7847290039062,
+        549.5098266601562,
+        1023.606201171875,
+        613.1293334960938
       ]
     }
   ],
-  "message": "Current queue 2, peak today 12",
+  "message": "Current queue 4, peak today 12",
   "error": null
 }
