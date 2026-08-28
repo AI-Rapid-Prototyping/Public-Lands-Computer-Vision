@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-08-28T21:40:44.649502+00:00",
+  "timestamp_utc": "2026-08-28T21:45:54.536960+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": null,
   "peak_queue_today": 11,
   "parking_spots_total": null,
@@ -17,26 +17,59 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7641255259513855,
+      "confidence": 0.8442665338516235,
       "xyxy": [
-        946.3906860351562,
-        578.4899291992188,
-        992.1831665039062,
-        607.3768310546875
+        1533.0037841796875,
+        609.1902465820312,
+        1815.48828125,
+        744.29150390625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.720393180847168,
+      "xyxy": [
+        1018.1046752929688,
+        579.7808837890625,
+        1162.6195068359375,
+        669.1876220703125
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.6387544870376587,
+      "confidence": 0.6562517881393433,
       "xyxy": [
-        925.5745239257812,
-        573.6681518554688,
-        965.419921875,
-        602.7192993164062
+        920.303466796875,
+        571.1998901367188,
+        966.838623046875,
+        603.435546875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6385162472724915,
+      "xyxy": [
+        1189.3125,
+        572.8037719726562,
+        1238.287353515625,
+        593.8079833984375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5406394600868225,
+      "xyxy": [
+        826.5205688476562,
+        572.3882446289062,
+        851.2896118164062,
+        594.9609375
       ]
     }
   ],
-  "message": "Current queue 2, peak today 11",
+  "message": "Current queue 5, peak today 11",
   "error": null
 }
