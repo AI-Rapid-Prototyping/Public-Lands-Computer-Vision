@@ -1,19 +1,97 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-04T13:10:13.124012+00:00",
+  "timestamp_utc": "2026-09-04T13:15:17.660728+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
   "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 7,
+  "detected_vehicle_count": 7,
+  "current_queue": 7,
   "current_queue_by_lane": null,
   "peak_queue_today": 53,
   "parking_spots_total": 100,
-  "parking_spots_available": 100,
-  "detections": [],
-  "message": "Current queue 0, peak today 53",
+  "parking_spots_available": 93,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8772339820861816,
+      "xyxy": [
+        275.4447326660156,
+        678.0197143554688,
+        495.2024230957031,
+        791.6898803710938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6480970978736877,
+      "xyxy": [
+        240.4884796142578,
+        609.6732788085938,
+        356.9150390625,
+        665.37841796875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.605431854724884,
+      "xyxy": [
+        816.0816819220781,
+        535.98681640625,
+        849.6142120361328,
+        571.8294067382812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5908107757568359,
+      "xyxy": [
+        856.2338333129883,
+        542.1761474609375,
+        955.5639495849609,
+        579.0823364257812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.4323423504829407,
+      "xyxy": [
+        1068.8320007324219,
+        521.0818481445312,
+        1129.4192504882812,
+        553.0006713867188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.2960473299026489,
+      "xyxy": [
+        771.3536376953125,
+        536.2366943359375,
+        849.863525390625,
+        569.8666381835938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.24811746180057526,
+      "xyxy": [
+        595.7887573242188,
+        554.9988403320312,
+        720.8375854492188,
+        623.0578002929688
+      ]
+    }
+  ],
+  "message": "Current queue 7, peak today 53",
   "error": null
 }
