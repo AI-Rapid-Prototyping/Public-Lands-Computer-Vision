@@ -1,26 +1,20 @@
 Grand Canyon South Entrance webcam vehicle feed
-status: ok
-timestamp_utc: 2026-09-04T18:53:12.330746+00:00
-total_vehicles_detected: 6
+status: error
+timestamp_utc: 2026-09-04T18:54:13.806987+00:00
+total_vehicles_detected: 0
 daily_vehicle_count: 81
-hourly_vehicle_count: 10
+hourly_vehicle_count: 0
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 2
-vehicles_in_lane_3: 4
+vehicles_in_lane_2: 0
+vehicles_in_lane_3: 0
 vehicles_in_lane_4: 0
-vehicles_in_line: 6
-message: Detected 6 vehicles anywhere in frame; lane 1=0, lane 2=2, lane 3=4, lane 4=0, in line=6, daily_vehicle_count=81, hourly_vehicle_count=10
-detections:
-- car (class_id=2, confidence=0.933) xyxy=[670.2586669921875, 467.0186462402344, 942.20556640625, 639.6394653320312]
-- car (class_id=2, confidence=0.862) xyxy=[0.07524414360523224, 380.97332763671875, 222.8280792236328, 551.98583984375]
-- car (class_id=2, confidence=0.823) xyxy=[370.0733947753906, 305.21429443359375, 442.4381408691406, 356.4876403808594]
-- car (class_id=2, confidence=0.786) xyxy=[611.6360473632812, 369.196533203125, 741.4627685546875, 495.35845947265625]
-- car (class_id=2, confidence=0.606) xyxy=[579.1272583007812, 263.0721130371094, 597.1024169921875, 279.3004455566406]
-- car (class_id=2, confidence=0.582) xyxy=[597.04833984375, 276.3746643066406, 628.7506713867188, 298.93756103515625]
+vehicles_in_line: 0
+error: HTTPSConnectionPool(host='www.nps.gov', port=443): Read timed out. (read timeout=10)
+detections: none
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 2
-- vehicles_in_lane_3: 4
+- vehicles_in_lane_2: 0
+- vehicles_in_lane_3: 0
 - vehicles_in_lane_4: 0
-- vehicles_in_line: 6
+- vehicles_in_line: 0
 output_schema: grca_lane_vehicle_feed_v2
