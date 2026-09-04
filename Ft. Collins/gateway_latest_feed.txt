@@ -1,15 +1,17 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-09-04T19:20:15.212161+00:00
+timestamp_utc: 2026-09-04T19:25:13.068203+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1788549309316.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1788549609511.jpg
 model_path: yolov8m.pt
-vehicle_count: 5
-message: Detected 5 vehicles anywhere in the frame
+vehicle_count: 7
+message: Detected 7 vehicles anywhere in the frame
 detections:
-- car (class_id=2, confidence=0.917) xyxy=[1671.1011352539062, 1255.7095947265625, 1901.3949584960938, 1366.4244384765625]
-- car (class_id=2, confidence=0.911) xyxy=[2963.3780517578125, 1856.1932373046875, 3236.509033203125, 2045.63623046875]
-- car (class_id=2, confidence=0.816) xyxy=[394.78729248046875, 716.7749633789062, 535.7230224609375, 778.8221435546875]
-- car (class_id=2, confidence=0.747) xyxy=[288.7711486816406, 664.5358276367188, 417.6995849609375, 723.5027465820312]
-- truck (class_id=7, confidence=0.473) xyxy=[515.0342407226562, 813.3212890625, 716.1878051757812, 902.3041381835938]
+- car (class_id=2, confidence=0.918) xyxy=[1670.292236328125, 1255.9326171875, 1875.76220703125, 1367.395751953125]
+- car (class_id=2, confidence=0.912) xyxy=[2963.2054443359375, 1855.922119140625, 3242.041259765625, 2045.9754638671875]
+- car (class_id=2, confidence=0.834) xyxy=[396.0019836425781, 718.2283935546875, 535.9365844726562, 779.0648803710938]
+- car (class_id=2, confidence=0.631) xyxy=[339.57806396484375, 685.4818725585938, 442.874755859375, 729.7681884765625]
+- car (class_id=2, confidence=0.509) xyxy=[292.6035461425781, 663.6351928710938, 410.8821105957031, 696.6959838867188]
+- car (class_id=2, confidence=0.475) xyxy=[514.3946533203125, 813.3699951171875, 715.2323608398438, 901.6644897460938]
+- truck (class_id=7, confidence=0.466) xyxy=[514.2992553710938, 813.4967041015625, 715.4719848632812, 902.7611083984375]
 output_schema: gateway_vehicle_count_v1
