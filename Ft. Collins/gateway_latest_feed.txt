@@ -1,16 +1,15 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-09-05T21:30:18.055913+00:00
+timestamp_utc: 2026-09-05T21:35:12.451048+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1788643510825.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1788643825776.jpg
 model_path: yolov8m.pt
-vehicle_count: 6
-message: Detected 6 vehicles anywhere in the frame
+vehicle_count: 5
+message: Detected 5 vehicles anywhere in the frame
 detections:
-- car (class_id=2, confidence=0.873) xyxy=[506.0776672363281, 812.230224609375, 689.5452880859375, 893.6732177734375]
-- car (class_id=2, confidence=0.703) xyxy=[322.21893310546875, 680.0155639648438, 444.5289306640625, 746.5430908203125]
-- car (class_id=2, confidence=0.672) xyxy=[3153.1640625, 1953.2374267578125, 3262.9942626953125, 2131.30615234375]
-- car (class_id=2, confidence=0.640) xyxy=[2523.2962646484375, 1654.61376953125, 2814.164794921875, 1852.88232421875]
-- truck (class_id=7, confidence=0.592) xyxy=[1748.2783203125, 1293.2080078125, 1875.628173828125, 1429.256591796875]
-- truck (class_id=7, confidence=0.470) xyxy=[2524.2818603515625, 1654.859375, 2814.3529052734375, 1852.97216796875]
+- car (class_id=2, confidence=0.894) xyxy=[498.60321044921875, 808.2317504882812, 686.2542114257812, 890.1834716796875]
+- car (class_id=2, confidence=0.855) xyxy=[3157.443603515625, 1959.3404541015625, 3262.7720947265625, 2126.385009765625]
+- car (class_id=2, confidence=0.749) xyxy=[2523.9097900390625, 1655.868896484375, 2818.604736328125, 1853.8079833984375]
+- truck (class_id=7, confidence=0.715) xyxy=[1747.88134765625, 1319.4635009765625, 1875.2000732421875, 1429.1771240234375]
+- car (class_id=2, confidence=0.670) xyxy=[310.47662353515625, 669.0264282226562, 440.4994201660156, 742.5913696289062]
 output_schema: gateway_vehicle_count_v1
