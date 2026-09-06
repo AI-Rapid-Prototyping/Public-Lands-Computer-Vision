@@ -1,26 +1,23 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-06T21:39:12.860981+00:00
-total_vehicles_detected: 6
+timestamp_utc: 2026-09-06T21:40:13.382678+00:00
+total_vehicles_detected: 3
 daily_vehicle_count: 113
 hourly_vehicle_count: 13
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 3
+vehicles_in_lane_3: 1
 vehicles_in_lane_4: 2
-vehicles_in_line: 5
-message: Detected 6 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=3, lane 4=2, in line=5, daily_vehicle_count=113, hourly_vehicle_count=13
+vehicles_in_line: 3
+message: Detected 3 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=1, lane 4=2, in line=3, daily_vehicle_count=113, hourly_vehicle_count=13
 detections:
-- car (class_id=2, confidence=0.964) xyxy=[645.6478271484375, 444.95458984375, 862.0216674804688, 639.61572265625]
-- car (class_id=2, confidence=0.911) xyxy=[600.8524169921875, 378.316650390625, 711.1917724609375, 471.7840270996094]
-- car (class_id=2, confidence=0.881) xyxy=[952.0617065429688, 392.510986328125, 1023.7980346679688, 453.46185302734375]
-- car (class_id=2, confidence=0.851) xyxy=[586.2990112304688, 330.4532165527344, 654.501953125, 379.96978759765625]
-- car (class_id=2, confidence=0.820) xyxy=[853.0813598632812, 343.2525939941406, 945.4791870117188, 412.61724853515625]
-- car (class_id=2, confidence=0.354) xyxy=[704.3470458984375, 266.6632080078125, 727.5907592773438, 279.8946533203125]
+- car (class_id=2, confidence=0.941) xyxy=[649.8611450195312, 426.71405029296875, 882.19970703125, 639.6148681640625]
+- car (class_id=2, confidence=0.579) xyxy=[836.3363037109375, 334.546142578125, 955.4015502929688, 417.064697265625]
+- truck (class_id=7, confidence=0.411) xyxy=[836.0724487304688, 334.4034729003906, 955.1966552734375, 417.12884521484375]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 3
+- vehicles_in_lane_3: 1
 - vehicles_in_lane_4: 2
-- vehicles_in_line: 5
+- vehicles_in_line: 3
 output_schema: grca_lane_vehicle_feed_v2
