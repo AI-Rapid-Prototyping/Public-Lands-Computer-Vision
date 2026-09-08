@@ -1,11 +1,101 @@
 Fort Collins gateway vehicle feed
-status: ok
-timestamp_utc: 2026-09-08T18:50:13.916519+00:00
+status: error
+timestamp_utc: 2026-09-08T18:55:13.069777+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1788893109156.jpg
+image_url: 
 model_path: yolov8m.pt
-vehicle_count: 1
-message: Detected 1 vehicles anywhere in the frame
-detections:
-- car (class_id=2, confidence=0.887) xyxy=[364.39520263671875, 708.9630126953125, 493.5427551269531, 770.3799438476562]
+vehicle_count: 0
+error: 403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 754, in _error_catcher
+    yield
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 879, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 862, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 484, in read
+    s = self.fp.read(amt)
+        ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.12/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 1066, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 955, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 878, in _raw_read
+    with self._error_catcher():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/databricks/python/lib/python3.12/site-packages/urllib3/response.py", line 759, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='public.senserasystems.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 550, in <module>
+    image, image_url = resolve_sensera_latest_image(headers)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 156, in resolve_sensera_latest_image
+    return download_image(urljoin(MEDIA_BASE_URL, filename), headers=headers), urljoin(MEDIA_BASE_URL, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 103, in download_image
+    response = fetch_bytes(image_url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 97, in fetch_bytes
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/requests/sessions.py", line 746, in send
+    r.content
+  File "/databricks/python/lib/python3.12/site-packages/requests/models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/databricks/python/lib/python3.12/site-packages/requests/models.py", line 826, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='public.senserasystems.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 552, in <module>
+    image, image_url = resolve_image_url([SNAPSHOT_URL, SOURCE_PAGE_URL], headers)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 169, in resolve_image_url
+    response = fetch_bytes(url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Workspace/Users/daniel.lang@dot.gov/Public-Lands-Computer-Vision/IP3/Ft. Collins/Count_FTCollins.py", line 98, in fetch_bytes
+    response.raise_for_status()
+  File "/databricks/python/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
+
+detections: none
 output_schema: gateway_vehicle_count_v1
