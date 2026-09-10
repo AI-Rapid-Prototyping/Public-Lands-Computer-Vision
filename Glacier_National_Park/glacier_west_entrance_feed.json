@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-10T21:45:40.342105+00:00",
+  "timestamp_utc": "2026-09-10T21:50:37.415811+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 1
+    "left_lane": 1,
+    "right_lane": 4
   },
   "peak_queue_today": 12,
   "parking_spots_total": null,
@@ -20,15 +20,59 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8017644286155701,
+      "confidence": 0.9087302684783936,
       "xyxy": [
-        1213.054931640625,
-        548.1001586914062,
-        1274.08251953125,
-        584.4530639648438
+        1250.1060791015625,
+        586.5189819335938,
+        1360.4765625,
+        658.9927368164062
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7761613130569458,
+      "xyxy": [
+        962.6809692382812,
+        548.1699829101562,
+        1102.713623046875,
+        608.1155395507812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7334520220756531,
+      "xyxy": [
+        1344.457275390625,
+        545.4685668945312,
+        1385.2586669921875,
+        570.2157592773438
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6964990496635437,
+      "xyxy": [
+        1417.9266357421875,
+        541.6461181640625,
+        1454.2633056640625,
+        565.9033203125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5173091888427734,
+      "xyxy": [
+        283.1043701171875,
+        598.1976318359375,
+        345.0581970214844,
+        656.7584228515625
       ]
     }
   ],
-  "message": "Current queue 1, peak today 12",
+  "message": "Current queue 5, peak today 12",
   "error": null
 }
