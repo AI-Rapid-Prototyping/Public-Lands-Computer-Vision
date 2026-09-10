@@ -1,79 +1,57 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-09T23:50:14.886217+00:00",
+  "timestamp_utc": "2026-09-10T00:00:30.510801+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1788997515955.jpg",
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1788998109825.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 6,
+  "vehicle_count": 4,
   "detections": [
     {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7891127467155457,
+      "xyxy": [
+        1568.5875244140625,
+        1196.9912109375,
+        1827.933349609375,
+        1317.879638671875
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7789266109466553,
+      "xyxy": [
+        1750.9771728515625,
+        1277.589111328125,
+        1875.7984619140625,
+        1421.2171630859375
+      ]
+    },
+    {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8356596231460571,
+      "confidence": 0.7467272281646729,
       "xyxy": [
-        361.9808654785156,
-        708.2744750976562,
-        534.0292358398438,
-        783.743896484375
-      ]
-    },
-    {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.8146717548370361,
-      "xyxy": [
-        1750.84326171875,
-        1289.2080078125,
-        1875.4508056640625,
-        1432.23974609375
+        371.0887756347656,
+        697.386474609375,
+        551.1031494140625,
+        773.3052978515625
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.6854304671287537,
+      "confidence": 0.6212335228919983,
       "xyxy": [
-        500.1691589355469,
-        812.408447265625,
-        739.3035278320312,
-        904.33544921875
-      ]
-    },
-    {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.5441769361495972,
-      "xyxy": [
-        1538.3297119140625,
-        1207.8756103515625,
-        1836.0377197265625,
-        1329.8453369140625
-      ]
-    },
-    {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.5185535550117493,
-      "xyxy": [
-        700.2753295898438,
-        676.8907470703125,
-        813.5951538085938,
-        728.5433959960938
-      ]
-    },
-    {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.5039140582084656,
-      "xyxy": [
-        500.1813049316406,
-        812.5142211914062,
-        738.595458984375,
-        904.14892578125
+        510.9654846191406,
+        802.8939819335938,
+        746.9208374023438,
+        895.288818359375
       ]
     }
   ],
-  "message": "Detected 6 vehicles anywhere in the frame",
+  "message": "Detected 4 vehicles anywhere in the frame",
   "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
