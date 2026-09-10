@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-10T23:20:39.740203+00:00",
+  "timestamp_utc": "2026-09-10T23:25:38.577319+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 5,
-  "detected_vehicle_count": 5,
-  "current_queue": 5,
+  "vehicle_count": 6,
+  "detected_vehicle_count": 6,
+  "current_queue": 6,
   "current_queue_by_lane": {
-    "left_lane": 1,
+    "left_lane": 2,
     "right_lane": 4
   },
   "peak_queue_today": 12,
@@ -18,61 +18,72 @@
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.7404805421829224,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.9150227904319763,
       "xyxy": [
-        400.77301025390625,
-        592.3473510742188,
-        1041.945068359375,
-        941.30224609375
+        847.8054809570312,
+        602.0121459960938,
+        1174.195556640625,
+        785.777099609375
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.6489916443824768,
+      "confidence": 0.8696527481079102,
       "xyxy": [
-        1384.6533203125,
-        551.3538818359375,
-        1422.802978515625,
-        586.6389770507812
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.548319935798645,
-      "xyxy": [
-        1450.2352294921875,
-        546.0665283203125,
-        1475.34326171875,
-        567.6627807617188
+        1231.4422607421875,
+        590.141357421875,
+        1356.494384765625,
+        667.364501953125
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.5320542454719543,
+      "confidence": 0.726126492023468,
       "xyxy": [
-        1334.869384765625,
-        559.7379760742188,
-        1400.2642822265625,
-        611.1222534179688
+        1347.2252197265625,
+        528.4086303710938,
+        1420.021484375,
+        607.8848266601562
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5041402578353882,
+      "confidence": 0.6709707379341125,
       "xyxy": [
-        1416.043212890625,
-        544.1047973632812,
-        1453.6314697265625,
-        576.3740234375
+        1310.115966796875,
+        568.1913452148438,
+        1393.8824462890625,
+        632.0571899414062
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.6448945999145508,
+      "xyxy": [
+        1.1528778076171875,
+        711.2396240234375,
+        433.3778991699219,
+        1041.3851318359375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6007376909255981,
+      "xyxy": [
+        1.033935546875,
+        710.5374145507812,
+        432.8448486328125,
+        1041.7781982421875
       ]
     }
   ],
-  "message": "Current queue 5, peak today 12",
+  "message": "Current queue 6, peak today 12",
   "error": null
 }
