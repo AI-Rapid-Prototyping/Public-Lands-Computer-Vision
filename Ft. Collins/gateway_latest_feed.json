@@ -1,46 +1,68 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-11T15:45:15.282821+00:00",
+  "timestamp_utc": "2026-09-11T16:05:13.171388+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1789141220598.jpg",
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1789142423352.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
+  "vehicle_count": 5,
   "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.9129164218902588,
+      "xyxy": [
+        1610.3291015625,
+        1240.488037109375,
+        1820.0714111328125,
+        1336.8519287109375
+      ]
+    },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.6731159687042236,
+      "confidence": 0.7045674324035645,
       "xyxy": [
-        463.3535461425781,
-        803.65478515625,
-        697.3912963867188,
-        891.8711547851562
+        460.9823303222656,
+        803.033447265625,
+        699.0748901367188,
+        891.6387329101562
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.6618056893348694,
+      "confidence": 0.6802809238433838,
       "xyxy": [
-        371.0576171875,
-        723.4854736328125,
-        507.23895263671875,
-        788.8333740234375
+        375.1373596191406,
+        721.1934814453125,
+        508.060791015625,
+        788.4224853515625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5285897254943848,
+      "xyxy": [
+        732.65576171875,
+        774.953125,
+        851.9911499023438,
+        866.7957763671875
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.4753280282020569,
+      "confidence": 0.5190149545669556,
       "xyxy": [
-        341.4137878417969,
-        701.757080078125,
-        432.62652587890625,
-        743.4029541015625
+        733.211181640625,
+        776.1609497070312,
+        851.8471069335938,
+        866.3781127929688
       ]
     }
   ],
-  "message": "Detected 3 vehicles anywhere in the frame",
+  "message": "Detected 5 vehicles anywhere in the frame",
   "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
