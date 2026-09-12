@@ -1,19 +1,75 @@
 {
-  "status": "error",
-  "timestamp_utc": "2026-09-12T17:10:13.659900+00:00",
+  "status": "ok",
+  "timestamp_utc": "2026-09-12T17:15:16.569947+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
-  "image_url": null,
+  "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": null,
-  "peak_queue_today": 0,
-  "parking_spots_total": null,
-  "parking_spots_available": null,
-  "detections": [],
-  "message": null,
-  "error": "HTTPSConnectionPool(host='glacier.org', port=443): Max retries exceeded with url: /webcam/lpp_nps.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  "peak_queue_today": 35,
+  "parking_spots_total": 100,
+  "parking_spots_available": 95,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7581442594528198,
+      "xyxy": [
+        443.2696228027344,
+        634.424072265625,
+        590.3787231445312,
+        711.1905517578125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.44852203130722046,
+      "xyxy": [
+        200.10214233398438,
+        607.9678955078125,
+        365.3406982421875,
+        673.7743530273438
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.396788090467453,
+      "xyxy": [
+        617.0441284179688,
+        608.3074340820312,
+        689.262939453125,
+        652.2924194335938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.258401095867157,
+      "xyxy": [
+        327.46588134765625,
+        609.48681640625,
+        417.2378845214844,
+        638.3292236328125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.2324288934469223,
+      "xyxy": [
+        1856.2586669921875,
+        705.7803344726562,
+        1919.712158203125,
+        802.628173828125
+      ]
+    }
+  ],
+  "message": "Current queue 5, peak today 35",
+  "error": null
 }
