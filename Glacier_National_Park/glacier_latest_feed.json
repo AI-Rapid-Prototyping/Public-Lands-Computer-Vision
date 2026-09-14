@@ -1,19 +1,42 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-14T14:20:13.488464+00:00",
+  "timestamp_utc": "2026-09-14T14:25:11.435560+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
   "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 2,
+  "detected_vehicle_count": 2,
+  "current_queue": 2,
   "current_queue_by_lane": null,
   "peak_queue_today": 16,
   "parking_spots_total": 100,
-  "parking_spots_available": 100,
-  "detections": [],
-  "message": "Current queue 0, peak today 16",
+  "parking_spots_available": 98,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7490463256835938,
+      "xyxy": [
+        303.0157775878906,
+        639.72021484375,
+        425.92181396484375,
+        708.0376586914062
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.22679349780082703,
+      "xyxy": [
+        544.268798828125,
+        637.2857666015625,
+        655.1705932617188,
+        690.0908203125
+      ]
+    }
+  ],
+  "message": "Current queue 2, peak today 16",
   "error": null
 }
