@@ -1,24 +1,25 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-14T23:37:12.682707+00:00
-total_vehicles_detected: 4
+timestamp_utc: 2026-09-14T23:38:12.462353+00:00
+total_vehicles_detected: 5
 daily_vehicle_count: 160
 hourly_vehicle_count: 6
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 3
+vehicles_in_lane_3: 4
 vehicles_in_lane_4: 1
-vehicles_in_line: 4
-message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=3, lane 4=1, in line=4, daily_vehicle_count=160, hourly_vehicle_count=6
+vehicles_in_line: 5
+message: Detected 5 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=4, lane 4=1, in line=5, daily_vehicle_count=160, hourly_vehicle_count=6
 detections:
-- car (class_id=2, confidence=0.956) xyxy=[659.92236328125, 460.44659423828125, 935.47802734375, 639.7985229492188]
-- car (class_id=2, confidence=0.894) xyxy=[633.9096069335938, 399.34759521484375, 755.1528930664062, 502.28857421875]
-- car (class_id=2, confidence=0.695) xyxy=[606.4815063476562, 299.07781982421875, 707.6734619140625, 421.63250732421875]
-- car (class_id=2, confidence=0.617) xyxy=[859.1527099609375, 341.7757263183594, 943.1345825195312, 409.73931884765625]
+- car (class_id=2, confidence=0.952) xyxy=[675.8875122070312, 466.0478515625, 944.9716796875, 639.8250122070312]
+- car (class_id=2, confidence=0.824) xyxy=[608.5131225585938, 358.5956726074219, 750.6049194335938, 502.03204345703125]
+- truck (class_id=7, confidence=0.761) xyxy=[591.8045654296875, 311.1312561035156, 674.3370361328125, 382.69659423828125]
+- car (class_id=2, confidence=0.745) xyxy=[878.8132934570312, 355.63018798828125, 1000.9378662109375, 433.5909118652344]
+- car (class_id=2, confidence=0.588) xyxy=[589.6202392578125, 260.26849365234375, 613.5570068359375, 272.97991943359375]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 3
+- vehicles_in_lane_3: 4
 - vehicles_in_lane_4: 1
-- vehicles_in_line: 4
+- vehicles_in_line: 5
 output_schema: grca_lane_vehicle_feed_v2
