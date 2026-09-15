@@ -1,19 +1,53 @@
 {
-  "status": "error",
-  "timestamp_utc": "2026-09-15T23:00:26.183289+00:00",
+  "status": "ok",
+  "timestamp_utc": "2026-09-15T23:05:13.221140+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
-  "image_url": null,
+  "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 3,
+  "detected_vehicle_count": 3,
+  "current_queue": 3,
   "current_queue_by_lane": null,
-  "peak_queue_today": 0,
-  "parking_spots_total": null,
-  "parking_spots_available": null,
-  "detections": [],
-  "message": null,
-  "error": "HTTPSConnectionPool(host='glacier.org', port=443): Max retries exceeded with url: /webcam/lpp_nps.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  "peak_queue_today": 43,
+  "parking_spots_total": 100,
+  "parking_spots_available": 97,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5217060446739197,
+      "xyxy": [
+        1852.5711669921875,
+        724.3413696289062,
+        1919.7791748046875,
+        797.00634765625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.35536471009254456,
+      "xyxy": [
+        1696.07958984375,
+        659.5875244140625,
+        1741.11279296875,
+        708.111572265625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.2789004147052765,
+      "xyxy": [
+        1696.4874877929688,
+        659.741455078125,
+        1740.9647216796875,
+        705.2230834960938
+      ]
+    }
+  ],
+  "message": "Current queue 3, peak today 43",
+  "error": null
 }
