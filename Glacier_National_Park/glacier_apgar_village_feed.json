@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-15T17:51:09.155981+00:00",
+  "timestamp_utc": "2026-09-15T18:01:59.165356+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
-  "detected_vehicle_count": 3,
-  "current_queue": 3,
+  "vehicle_count": 6,
+  "detected_vehicle_count": 6,
+  "current_queue": 6,
   "current_queue_by_lane": null,
   "peak_queue_today": 8,
   "parking_spots_total": null,
@@ -17,37 +17,70 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.832366406917572,
+      "confidence": 0.8665049076080322,
       "xyxy": [
-        952.706787109375,
-        579.950927734375,
-        1008.7471313476562,
-        610.07666015625
+        952.0361938476562,
+        579.9561767578125,
+        1008.4786376953125,
+        610.2330932617188
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.7530501484870911,
+      "confidence": 0.812269926071167,
       "xyxy": [
-        1716.2625732421875,
-        610.0083618164062,
-        1919.0797119140625,
-        741.9580078125
+        1716.2427978515625,
+        610.0311279296875,
+        1919.2979736328125,
+        754.5313720703125
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.6122967600822449,
+      "confidence": 0.7936065793037415,
       "xyxy": [
-        911.2135620117188,
-        570.9910278320312,
-        966.1503295898438,
-        602.004638671875
+        1101.9559326171875,
+        584.8683471679688,
+        1367.859130859375,
+        726.4918823242188
+      ]
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "confidence": 0.7917789220809937,
+      "xyxy": [
+        1462.52197265625,
+        624.8589477539062,
+        1564.99072265625,
+        697.7759399414062
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.688173770904541,
+      "xyxy": [
+        822.342041015625,
+        574.1575927734375,
+        850.456787109375,
+        592.670654296875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6543451547622681,
+      "xyxy": [
+        910.3018798828125,
+        570.1161499023438,
+        960.008056640625,
+        603.1714477539062
       ]
     }
   ],
-  "message": "Current queue 3, peak today 8",
+  "message": "Current queue 6, peak today 8",
   "error": null
 }
