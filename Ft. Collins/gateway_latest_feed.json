@@ -1,24 +1,46 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-16T21:30:20.962181+00:00",
+  "timestamp_utc": "2026-09-16T21:40:15.048821+00:00",
   "source_page_url": "https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras",
-  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1789593911358.jpg",
+  "image_url": "https://public.senserasystems.com/public/media/M78031286A82/1789594526041.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
+  "vehicle_count": 3,
   "detections": [
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8962674736976624,
+      "confidence": 0.8805816769599915,
       "xyxy": [
-        2679.124755859375,
-        1729.7562255859375,
-        2917.318359375,
-        1896.1689453125
+        2681.261474609375,
+        1730.6365966796875,
+        2924.6783447265625,
+        1900.0997314453125
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.6319157481193542,
+      "xyxy": [
+        363.96038818359375,
+        697.849609375,
+        533.71826171875,
+        780.8514404296875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5029491782188416,
+      "xyxy": [
+        294.6888732910156,
+        669.3306274414062,
+        406.7025451660156,
+        716.5057373046875
       ]
     }
   ],
-  "message": "Detected 1 vehicles anywhere in the frame",
+  "message": "Detected 3 vehicles anywhere in the frame",
   "error": null,
   "output_schema": "gateway_vehicle_count_v1"
 }
