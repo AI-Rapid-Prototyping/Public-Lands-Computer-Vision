@@ -1,22 +1,78 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-16T22:55:39.259277+00:00",
+  "timestamp_utc": "2026-09-16T23:00:47.110791+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 0
+    "left_lane": 2,
+    "right_lane": 3
   },
   "peak_queue_today": 11,
   "parking_spots_total": null,
   "parking_spots_available": null,
-  "detections": [],
-  "message": "Current queue 0, peak today 11",
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.946310818195343,
+      "xyxy": [
+        307.037353515625,
+        647.9386596679688,
+        919.1965942382812,
+        956.80859375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.866579532623291,
+      "xyxy": [
+        1175.3599853515625,
+        579.2503051757812,
+        1324.5985107421875,
+        689.2470703125
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7372727394104004,
+      "xyxy": [
+        1378.6409912109375,
+        546.531494140625,
+        1430.752197265625,
+        592.454833984375
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5774168968200684,
+      "xyxy": [
+        1431.7474365234375,
+        524.24267578125,
+        1477.003173828125,
+        569.8011474609375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5470134615898132,
+      "xyxy": [
+        289.2181091308594,
+        598.6231079101562,
+        308.9676208496094,
+        646.896728515625
+      ]
+    }
+  ],
+  "message": "Current queue 5, peak today 11",
   "error": null
 }
