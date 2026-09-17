@@ -1,17 +1,17 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-17T22:25:45.256103+00:00",
+  "timestamp_utc": "2026-09-17T22:30:49.000070+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
-  "detected_vehicle_count": 3,
-  "current_queue": 3,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
     "left_lane": 1,
-    "right_lane": 2
+    "right_lane": 3
   },
   "peak_queue_today": 11,
   "parking_spots_total": null,
@@ -20,37 +20,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9403758645057678,
+      "confidence": 0.9317065477371216,
       "xyxy": [
-        1.0533905029296875,
-        735.349853515625,
-        438.2817077636719,
-        1067.1461181640625
+        792.1371459960938,
+        617.6693115234375,
+        1136.7220458984375,
+        805.4800415039062
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9081166982650757,
+      "confidence": 0.6846817135810852,
       "xyxy": [
-        1107.449462890625,
-        589.453857421875,
-        1303.2821044921875,
-        706.0535888671875
+        1371.8927001953125,
+        550.0684814453125,
+        1421.0943603515625,
+        601.0213623046875
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7946250438690186,
+      "confidence": 0.6407904028892517,
       "xyxy": [
-        1365.957763671875,
-        552.8967895507812,
-        1418.6058349609375,
-        595.4497680664062
+        274.4140625,
+        597.2272338867188,
+        345.8788146972656,
+        655.5367431640625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5423444509506226,
+      "xyxy": [
+        1304.2926025390625,
+        556.0772094726562,
+        1395.5853271484375,
+        631.7776489257812
       ]
     }
   ],
-  "message": "Current queue 3, peak today 11",
+  "message": "Current queue 4, peak today 11",
   "error": null
 }
