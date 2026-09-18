@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-18T17:06:09.263295+00:00",
+  "timestamp_utc": "2026-09-18T17:11:15.562353+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 6,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7925542593002319,
+      "confidence": 0.8984602689743042,
       "xyxy": [
-        1561.7259521484375,
-        628.7058715820312,
-        1803.1600341796875,
-        721.1475830078125
+        1561.94384765625,
+        627.25390625,
+        1802.07275390625,
+        739.7550659179688
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8774715662002563,
+      "xyxy": [
+        1871.750244140625,
+        694.9522705078125,
+        1919.6846923828125,
+        768.7600708007812
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.7631744742393494,
+      "confidence": 0.764271080493927,
       "xyxy": [
-        1378.817138671875,
-        598.47802734375,
-        1551.826904296875,
-        697.5003662109375
+        1378.7589111328125,
+        598.8704833984375,
+        1551.7412109375,
+        697.470947265625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6702696681022644,
+      "xyxy": [
+        950.990478515625,
+        576.4264526367188,
+        998.302001953125,
+        607.6650390625
       ]
     }
   ],
-  "message": "Current queue 2, peak today 6",
+  "message": "Current queue 4, peak today 6",
   "error": null
 }
