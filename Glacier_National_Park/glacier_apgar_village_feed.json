@@ -1,42 +1,64 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-18T14:45:56.218149+00:00",
+  "timestamp_utc": "2026-09-18T14:50:46.087770+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 6,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.8201584815979004,
+      "class_id": 5,
+      "class_name": "bus",
+      "confidence": 0.6313635110855103,
       "xyxy": [
-        1772.294677734375,
-        613.7265625,
-        1918.301513671875,
-        766.1497802734375
+        1108.0152587890625,
+        575.8898315429688,
+        1348.7791748046875,
+        687.9434204101562
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6295566558837891,
+      "xyxy": [
+        1773.4080810546875,
+        615.072021484375,
+        1919.4903564453125,
+        763.5363159179688
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6046579480171204,
+      "xyxy": [
+        1425.8148193359375,
+        612.2161254882812,
+        1649.7528076171875,
+        710.0938720703125
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.5730151534080505,
+      "confidence": 0.5672184824943542,
       "xyxy": [
-        1425.8482666015625,
-        612.3042602539062,
-        1650.368896484375,
-        709.7825317382812
+        1773.1044921875,
+        614.7601928710938,
+        1919.50390625,
+        763.4281005859375
       ]
     }
   ],
-  "message": "Current queue 2, peak today 6",
+  "message": "Current queue 4, peak today 6",
   "error": null
 }
