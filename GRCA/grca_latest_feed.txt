@@ -1,21 +1,29 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-20T00:29:12.825740+00:00
-total_vehicles_detected: 1
-daily_vehicle_count: 160
-hourly_vehicle_count: 9
+timestamp_utc: 2026-09-20T00:30:17.096519+00:00
+total_vehicles_detected: 9
+daily_vehicle_count: 162
+hourly_vehicle_count: 11
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 0
-vehicles_in_lane_3: 0
-vehicles_in_lane_4: 1
-vehicles_in_line: 1
-message: Detected 1 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=0, lane 4=1, in line=1, daily_vehicle_count=160, hourly_vehicle_count=9
+vehicles_in_lane_2: 1
+vehicles_in_lane_3: 2
+vehicles_in_lane_4: 6
+vehicles_in_line: 9
+message: Detected 9 vehicles anywhere in frame; lane 1=0, lane 2=1, lane 3=2, lane 4=6, in line=9, daily_vehicle_count=162, hourly_vehicle_count=11
 detections:
-- truck (class_id=7, confidence=0.440) xyxy=[798.9569091796875, 334.9693298339844, 915.08935546875, 405.76470947265625]
+- car (class_id=2, confidence=0.885) xyxy=[618.1009521484375, 390.32080078125, 751.5494384765625, 509.8775329589844]
+- car (class_id=2, confidence=0.871) xyxy=[639.7727661132812, 463.7806701660156, 904.8956909179688, 639.8123168945312]
+- car (class_id=2, confidence=0.865) xyxy=[329.60430908203125, 315.3880310058594, 439.8314514160156, 389.30419921875]
+- motorcycle (class_id=3, confidence=0.678) xyxy=[855.5031127929688, 363.488037109375, 894.4904174804688, 406.6385803222656]
+- motorcycle (class_id=3, confidence=0.675) xyxy=[889.4415283203125, 375.70635986328125, 948.2311401367188, 428.61309814453125]
+- motorcycle (class_id=3, confidence=0.522) xyxy=[975.3187255859375, 380.3623046875, 1021.0628662109375, 434.85137939453125]
+- motorcycle (class_id=3, confidence=0.374) xyxy=[749.9213256835938, 319.48297119140625, 766.4780883789062, 342.4938049316406]
+- motorcycle (class_id=3, confidence=0.354) xyxy=[938.5443115234375, 370.05767822265625, 957.1146240234375, 414.6534729003906]
+- motorcycle (class_id=3, confidence=0.307) xyxy=[718.0813598632812, 321.2713317871094, 738.5198974609375, 344.17388916015625]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 0
-- vehicles_in_lane_4: 1
-- vehicles_in_line: 1
+- vehicles_in_lane_2: 1
+- vehicles_in_lane_3: 2
+- vehicles_in_lane_4: 6
+- vehicles_in_line: 9
 output_schema: grca_lane_vehicle_feed_v2
