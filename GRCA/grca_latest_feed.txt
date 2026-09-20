@@ -1,25 +1,24 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-20T23:49:58.576171+00:00
-total_vehicles_detected: 5
+timestamp_utc: 2026-09-20T23:50:30.952259+00:00
+total_vehicles_detected: 4
 daily_vehicle_count: 35
 hourly_vehicle_count: 9
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 2
-vehicles_in_lane_4: 2
+vehicles_in_lane_3: 4
+vehicles_in_lane_4: 0
 vehicles_in_line: 4
-message: Detected 5 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=2, lane 4=2, in line=4, daily_vehicle_count=35, hourly_vehicle_count=9
+message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=4, lane 4=0, in line=4, daily_vehicle_count=35, hourly_vehicle_count=9
 detections:
-- car (class_id=2, confidence=0.927) xyxy=[648.9937744140625, 412.18634033203125, 833.5955200195312, 583.7105712890625]
-- car (class_id=2, confidence=0.831) xyxy=[943.8814697265625, 365.277099609375, 1023.7619018554688, 453.47705078125]
-- car (class_id=2, confidence=0.805) xyxy=[576.0732421875, 298.4659118652344, 627.8642578125, 343.34197998046875]
-- truck (class_id=7, confidence=0.753) xyxy=[819.0614624023438, 330.32403564453125, 912.1994018554688, 401.75128173828125]
-- car (class_id=2, confidence=0.519) xyxy=[854.693359375, 592.2781982421875, 1023.1417846679688, 639.7913208007812]
+- car (class_id=2, confidence=0.869) xyxy=[606.0656127929688, 360.4383850097656, 706.0965576171875, 454.17108154296875]
+- car (class_id=2, confidence=0.849) xyxy=[639.4737548828125, 404.92327880859375, 872.4892578125, 631.53515625]
+- car (class_id=2, confidence=0.444) xyxy=[577.0701293945312, 262.95123291015625, 595.3878784179688, 279.30438232421875]
+- truck (class_id=7, confidence=0.378) xyxy=[577.1553955078125, 263.1214599609375, 595.52978515625, 279.28302001953125]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 2
-- vehicles_in_lane_4: 2
+- vehicles_in_lane_3: 4
+- vehicles_in_lane_4: 0
 - vehicles_in_line: 4
 output_schema: grca_lane_vehicle_feed_v2
