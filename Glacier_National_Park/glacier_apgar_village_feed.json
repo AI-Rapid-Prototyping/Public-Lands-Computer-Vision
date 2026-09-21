@@ -1,53 +1,64 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-21T23:01:02.689506+00:00",
+  "timestamp_utc": "2026-09-21T23:05:44.879964+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 3,
-  "detected_vehicle_count": 3,
-  "current_queue": 3,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 10,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7871890664100647,
+      "xyxy": [
+        1645.7652587890625,
+        622.1847534179688,
+        1915.121826171875,
+        759.0374145507812
+      ]
+    },
+    {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8317782282829285,
+      "confidence": 0.7798854112625122,
       "xyxy": [
-        971.3435668945312,
-        576.633544921875,
-        1035.6435546875,
-        613.6680908203125
+        923.2293090820312,
+        576.9152221679688,
+        968.5394897460938,
+        606.303466796875
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.7994457483291626,
+      "confidence": 0.7539817690849304,
       "xyxy": [
-        1389.0177001953125,
-        597.3983154296875,
-        1589.8177490234375,
-        704.9862670898438
+        1010.2635498046875,
+        575.6177368164062,
+        1131.098876953125,
+        644.409912109375
       ]
     },
     {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.7056846022605896,
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7482244372367859,
       "xyxy": [
-        922.7810668945312,
-        577.8228149414062,
-        967.9839477539062,
-        605.40625
+        1389.114990234375,
+        597.280029296875,
+        1591.7230224609375,
+        704.921142578125
       ]
     }
   ],
-  "message": "Current queue 3, peak today 10",
+  "message": "Current queue 4, peak today 10",
   "error": null
 }
