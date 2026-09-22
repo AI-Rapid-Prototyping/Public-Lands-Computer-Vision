@@ -1,32 +1,20 @@
 Grand Canyon South Entrance webcam vehicle feed
-status: ok
-timestamp_utc: 2026-09-22T16:02:11.738095+00:00
-total_vehicles_detected: 12
+status: error
+timestamp_utc: 2026-09-22T16:03:15.190434+00:00
+total_vehicles_detected: 0
 daily_vehicle_count: 36
-hourly_vehicle_count: 1
+hourly_vehicle_count: 0
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 4
-vehicles_in_lane_3: 5
-vehicles_in_lane_4: 3
-vehicles_in_line: 12
-message: Detected 12 vehicles anywhere in frame; lane 1=0, lane 2=4, lane 3=5, lane 4=3, in line=12, daily_vehicle_count=36, hourly_vehicle_count=1
-detections:
-- car (class_id=2, confidence=0.928) xyxy=[174.4365997314453, 366.62249755859375, 333.96343994140625, 474.27655029296875]
-- car (class_id=2, confidence=0.922) xyxy=[0.3204345703125, 413.0093688964844, 162.04666137695312, 633.4548950195312]
-- car (class_id=2, confidence=0.913) xyxy=[623.3506469726562, 407.1619567871094, 777.0342407226562, 558.4739990234375]
-- car (class_id=2, confidence=0.878) xyxy=[871.625, 352.029541015625, 981.6593627929688, 425.277587890625]
-- car (class_id=2, confidence=0.872) xyxy=[628.2860107421875, 364.01910400390625, 728.4510498046875, 432.1463317871094]
-- car (class_id=2, confidence=0.832) xyxy=[607.2288208007812, 336.2644348144531, 673.46923828125, 399.1749267578125]
-- car (class_id=2, confidence=0.743) xyxy=[592.4459838867188, 313.7498779296875, 645.84033203125, 361.4004211425781]
-- car (class_id=2, confidence=0.705) xyxy=[593.0540771484375, 278.9793395996094, 621.1160888671875, 302.2119140625]
-- truck (class_id=7, confidence=0.610) xyxy=[370.35498046875, 299.9212341308594, 430.00128173828125, 356.8360900878906]
-- truck (class_id=7, confidence=0.568) xyxy=[307.09552001953125, 303.7695007324219, 404.63275146484375, 385.0740051269531]
-- truck (class_id=7, confidence=0.485) xyxy=[729.8128662109375, 309.40057373046875, 784.5751953125, 349.1413879394531]
-- car (class_id=2, confidence=0.434) xyxy=[729.7161254882812, 309.34942626953125, 784.38525390625, 349.0392150878906]
+vehicles_in_lane_2: 0
+vehicles_in_lane_3: 0
+vehicles_in_lane_4: 0
+vehicles_in_line: 0
+error: HTTPSConnectionPool(host='www.nps.gov', port=443): Read timed out.
+detections: none
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 4
-- vehicles_in_lane_3: 5
-- vehicles_in_lane_4: 3
-- vehicles_in_line: 12
+- vehicles_in_lane_2: 0
+- vehicles_in_lane_3: 0
+- vehicles_in_lane_4: 0
+- vehicles_in_line: 0
 output_schema: grca_lane_vehicle_feed_v2
