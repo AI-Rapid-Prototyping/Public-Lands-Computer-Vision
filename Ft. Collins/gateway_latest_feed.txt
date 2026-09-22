@@ -1,16 +1,17 @@
 Fort Collins gateway vehicle feed
 status: ok
-timestamp_utc: 2026-09-22T17:45:12.350854+00:00
+timestamp_utc: 2026-09-22T17:50:12.080949+00:00
 source_page_url: https://www.fortcollins.gov/Activities/Parks-Natural-Areas-and-Trails/Natural-Areas/Visit/Parking-Lot-Cameras
-image_url: https://public.senserasystems.com/public/media/M78031286A82/1790098808008.jpg
+image_url: https://public.senserasystems.com/public/media/M78031286A82/1790099108423.jpg
 model_path: yolov8m.pt
-vehicle_count: 6
-message: Detected 6 vehicles anywhere in the frame
+vehicle_count: 7
+message: Detected 7 vehicles anywhere in the frame
 detections:
-- bus (class_id=5, confidence=0.849) xyxy=[254.79391479492188, 610.6483154296875, 540.0333251953125, 733.2919311523438]
-- car (class_id=2, confidence=0.831) xyxy=[527.478759765625, 845.6229858398438, 714.6449584960938, 910.4796142578125]
-- car (class_id=2, confidence=0.816) xyxy=[363.26617431640625, 721.1005859375, 481.6534118652344, 788.9801025390625]
-- car (class_id=2, confidence=0.776) xyxy=[664.4189453125, 912.3182373046875, 876.9202880859375, 1009.8944702148438]
-- car (class_id=2, confidence=0.661) xyxy=[503.3456115722656, 818.8745727539062, 657.794677734375, 873.7581176757812]
-- car (class_id=2, confidence=0.550) xyxy=[601.286376953125, 873.7631225585938, 753.9295654296875, 935.4615478515625]
+- car (class_id=2, confidence=0.822) xyxy=[526.1669921875, 841.821533203125, 713.546630859375, 908.6250610351562]
+- bus (class_id=5, confidence=0.815) xyxy=[250.18875122070312, 607.51904296875, 545.5684204101562, 734.2074584960938]
+- car (class_id=2, confidence=0.783) xyxy=[363.66436767578125, 718.6616821289062, 482.3791198730469, 786.182373046875]
+- car (class_id=2, confidence=0.718) xyxy=[662.4649047851562, 910.7992553710938, 876.3853149414062, 1006.1651000976562]
+- car (class_id=2, confidence=0.648) xyxy=[599.0433349609375, 873.3890991210938, 753.9578857421875, 934.1170654296875]
+- car (class_id=2, confidence=0.602) xyxy=[508.629150390625, 816.7238159179688, 658.4454345703125, 871.1135864257812]
+- car (class_id=2, confidence=0.531) xyxy=[329.614013671875, 690.8651123046875, 452.4402160644531, 726.2503662109375]
 output_schema: gateway_vehicle_count_v1
