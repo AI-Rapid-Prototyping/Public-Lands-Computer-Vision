@@ -1,25 +1,24 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-24T15:33:12.534981+00:00
-total_vehicles_detected: 5
+timestamp_utc: 2026-09-24T15:34:26.438717+00:00
+total_vehicles_detected: 4
 daily_vehicle_count: 22
 hourly_vehicle_count: 7
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 0
-vehicles_in_lane_3: 2
+vehicles_in_lane_2: 1
+vehicles_in_lane_3: 1
 vehicles_in_lane_4: 1
 vehicles_in_line: 3
-message: Detected 5 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=2, lane 4=1, in line=3, daily_vehicle_count=22, hourly_vehicle_count=7
+message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=1, lane 3=1, lane 4=1, in line=3, daily_vehicle_count=22, hourly_vehicle_count=7
 detections:
-- car (class_id=2, confidence=0.851) xyxy=[964.5216674804688, 380.81585693359375, 1023.7054443359375, 454.806884765625]
-- car (class_id=2, confidence=0.417) xyxy=[681.0438232421875, 538.4978637695312, 889.96630859375, 639.8162231445312]
-- car (class_id=2, confidence=0.394) xyxy=[728.2907104492188, 560.2997436523438, 1023.8914794921875, 639.6563720703125]
-- truck (class_id=7, confidence=0.338) xyxy=[731.6849365234375, 560.833984375, 1023.1986083984375, 639.4865112304688]
-- truck (class_id=7, confidence=0.325) xyxy=[681.1329345703125, 538.4517211914062, 888.40380859375, 639.8013916015625]
+- car (class_id=2, confidence=0.920) xyxy=[668.3151245117188, 460.48846435546875, 927.32421875, 639.7888793945312]
+- truck (class_id=7, confidence=0.779) xyxy=[474.4384765625, 263.60736083984375, 513.3165283203125, 303.5174255371094]
+- car (class_id=2, confidence=0.725) xyxy=[985.4850463867188, 406.99627685546875, 1023.79248046875, 448.95587158203125]
+- car (class_id=2, confidence=0.321) xyxy=[580.2395629882812, 258.861328125, 593.7784423828125, 266.96807861328125]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 2
+- vehicles_in_lane_2: 1
+- vehicles_in_lane_3: 1
 - vehicles_in_lane_4: 1
 - vehicles_in_line: 3
 output_schema: grca_lane_vehicle_feed_v2
