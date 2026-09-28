@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-28T14:45:47.030910+00:00",
+  "timestamp_utc": "2026-09-28T14:50:41.107008+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 5,
-  "detected_vehicle_count": 5,
-  "current_queue": 5,
+  "vehicle_count": 3,
+  "detected_vehicle_count": 3,
+  "current_queue": 3,
   "current_queue_by_lane": {
-    "left_lane": 2,
+    "left_lane": 0,
     "right_lane": 3
   },
   "peak_queue_today": 6,
@@ -18,61 +18,39 @@
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8990722894668579,
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7454076409339905,
       "xyxy": [
-        1146.4361572265625,
-        557.9725341796875,
-        1238.85546875,
-        616.7506103515625
+        1256.8221435546875,
+        531.3519897460938,
+        1311.4996337890625,
+        569.3395385742188
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8412135243415833,
+      "confidence": 0.6964565515518188,
       "xyxy": [
-        164.64404296875,
-        607.5955200195312,
-        396.86077880859375,
-        700.4655151367188
+        1362.0721435546875,
+        544.4442749023438,
+        1401.02685546875,
+        572.484375
       ]
     },
     {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.7953706383705139,
+      "class_id": 5,
+      "class_name": "bus",
+      "confidence": 0.6393170356750488,
       "xyxy": [
-        954.7718505859375,
-        557.3202514648438,
-        1099.2694091796875,
-        654.9029541015625
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.7748896479606628,
-      "xyxy": [
-        1219.6131591796875,
-        545.4276733398438,
-        1281.9158935546875,
-        580.5230712890625
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.7482439875602722,
-      "xyxy": [
-        586.7139282226562,
-        606.5953979492188,
-        664.5830688476562,
-        699.7025146484375
+        1420.2900390625,
+        530.7009887695312,
+        1459.2890625,
+        574.7091674804688
       ]
     }
   ],
-  "message": "Current queue 5, peak today 6",
+  "message": "Current queue 3, peak today 6",
   "error": null
 }
