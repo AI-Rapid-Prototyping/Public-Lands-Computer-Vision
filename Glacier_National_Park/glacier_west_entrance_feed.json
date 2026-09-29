@@ -1,34 +1,67 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-29T00:25:19.298172+00:00",
+  "timestamp_utc": "2026-09-29T00:30:51.531964+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 1
+    "left_lane": 2,
+    "right_lane": 2
   },
   "peak_queue_today": 5,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.8059711456298828,
+      "xyxy": [
+        0.2522850036621094,
+        565.3164672851562,
+        243.86329650878906,
+        654.156494140625
+      ]
+    },
+    {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7201586365699768,
+      "confidence": 0.7515997886657715,
       "xyxy": [
-        1429.819580078125,
-        550.3821411132812,
-        1460.1806640625,
-        573.3927001953125
+        1353.3233642578125,
+        554.1718139648438,
+        1408.7957763671875,
+        599.3176879882812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7172628045082092,
+      "xyxy": [
+        1406.3837890625,
+        547.9838256835938,
+        1443.505126953125,
+        577.383056640625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5193496942520142,
+      "xyxy": [
+        0.0,
+        566.8980102539062,
+        56.01120376586914,
+        652.4893188476562
       ]
     }
   ],
-  "message": "Current queue 1, peak today 5",
+  "message": "Current queue 4, peak today 5",
   "error": null
 }
