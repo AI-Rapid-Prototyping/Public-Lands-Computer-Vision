@@ -1,34 +1,67 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-09-29T21:25:38.241626+00:00",
+  "timestamp_utc": "2026-09-29T21:30:46.450796+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 1
+    "left_lane": 1,
+    "right_lane": 3
   },
   "peak_queue_today": 9,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.7655072808265686,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.9409945607185364,
       "xyxy": [
-        1139.3232421875,
-        521.857666015625,
-        1346.8453369140625,
-        694.7353515625
+        0.9599685668945312,
+        690.45654296875,
+        551.5462036132812,
+        1102.49755859375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8440082669258118,
+      "xyxy": [
+        1363.789306640625,
+        558.609375,
+        1415.9188232421875,
+        597.1399536132812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6159143447875977,
+      "xyxy": [
+        1451.4705810546875,
+        548.458251953125,
+        1480.4805908203125,
+        570.3910522460938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5310184359550476,
+      "xyxy": [
+        1440.2755126953125,
+        540.7491455078125,
+        1471.888671875,
+        562.6353759765625
       ]
     }
   ],
-  "message": "Current queue 1, peak today 9",
+  "message": "Current queue 4, peak today 9",
   "error": null
 }
