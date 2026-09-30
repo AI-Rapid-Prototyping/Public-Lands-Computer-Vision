@@ -1,29 +1,27 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-09-30T20:59:13.749953+00:00
-total_vehicles_detected: 9
+timestamp_utc: 2026-09-30T21:00:22.921064+00:00
+total_vehicles_detected: 7
 daily_vehicle_count: 118
-hourly_vehicle_count: 14
+hourly_vehicle_count: 0
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 0
+vehicles_in_lane_2: 1
 vehicles_in_lane_3: 4
-vehicles_in_lane_4: 4
-vehicles_in_line: 8
-message: Detected 9 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=4, lane 4=4, in line=8, daily_vehicle_count=118, hourly_vehicle_count=14
+vehicles_in_lane_4: 2
+vehicles_in_line: 7
+message: Detected 7 vehicles anywhere in frame; lane 1=0, lane 2=1, lane 3=4, lane 4=2, in line=7, daily_vehicle_count=118, hourly_vehicle_count=0
 detections:
-- car (class_id=2, confidence=0.907) xyxy=[883.4480590820312, 356.5223083496094, 998.3156127929688, 431.3740234375]
-- car (class_id=2, confidence=0.842) xyxy=[591.07763671875, 334.9645080566406, 673.62158203125, 406.49237060546875]
-- truck (class_id=7, confidence=0.830) xyxy=[642.0191650390625, 371.5948791503906, 952.0810546875, 639.4364624023438]
-- car (class_id=2, confidence=0.820) xyxy=[734.0418090820312, 309.64764404296875, 799.5, 357.4541931152344]
-- car (class_id=2, confidence=0.819) xyxy=[609.6970825195312, 368.77545166015625, 696.73193359375, 499.10205078125]
-- car (class_id=2, confidence=0.612) xyxy=[993.3611450195312, 367.3606872558594, 1023.7650146484375, 448.97601318359375]
-- bus (class_id=5, confidence=0.606) xyxy=[641.8855590820312, 371.3543395996094, 951.8834228515625, 639.638916015625]
-- car (class_id=2, confidence=0.390) xyxy=[631.7404174804688, 257.70452880859375, 645.89208984375, 269.26324462890625]
-- car (class_id=2, confidence=0.356) xyxy=[857.9600830078125, 339.1602478027344, 891.2653198242188, 393.0541076660156]
+- car (class_id=2, confidence=0.953) xyxy=[674.4605712890625, 486.9459533691406, 938.0515747070312, 639.6751708984375]
+- car (class_id=2, confidence=0.917) xyxy=[99.8206558227539, 351.6797790527344, 273.1490173339844, 481.9564514160156]
+- car (class_id=2, confidence=0.891) xyxy=[623.8489990234375, 383.4139709472656, 744.12744140625, 495.94598388671875]
+- car (class_id=2, confidence=0.877) xyxy=[600.1485595703125, 339.3760681152344, 672.5609130859375, 394.6797790527344]
+- car (class_id=2, confidence=0.848) xyxy=[984.4661254882812, 387.84759521484375, 1023.7536010742188, 455.8238830566406]
+- truck (class_id=7, confidence=0.650) xyxy=[841.8191528320312, 334.12823486328125, 948.1259765625, 411.47015380859375]
+- truck (class_id=7, confidence=0.606) xyxy=[542.2565307617188, 263.0812072753906, 573.23828125, 286.330810546875]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 0
+- vehicles_in_lane_2: 1
 - vehicles_in_lane_3: 4
-- vehicles_in_lane_4: 4
-- vehicles_in_line: 8
+- vehicles_in_lane_4: 2
+- vehicles_in_line: 7
 output_schema: grca_lane_vehicle_feed_v2
