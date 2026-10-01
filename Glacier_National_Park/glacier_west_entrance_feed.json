@@ -1,45 +1,56 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-01T23:20:37.791003+00:00",
+  "timestamp_utc": "2026-10-01T23:25:34.606112+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 3,
+  "detected_vehicle_count": 3,
+  "current_queue": 3,
   "current_queue_by_lane": {
-    "left_lane": 1,
-    "right_lane": 1
+    "left_lane": 0,
+    "right_lane": 3
   },
   "peak_queue_today": 10,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8049564361572266,
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.9168100953102112,
       "xyxy": [
-        1379.872314453125,
-        555.7015380859375,
-        1423.1907958984375,
-        587.4286499023438
+        616.7196655273438,
+        604.2066040039062,
+        1148.5936279296875,
+        880.68212890625
       ]
     },
     {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.5118762254714966,
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5606353282928467,
       "xyxy": [
-        274.0486755371094,
-        602.3446655273438,
-        344.8121643066406,
-        655.12939453125
+        1375.9273681640625,
+        550.4951171875,
+        1423.546142578125,
+        589.5446166992188
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5504787564277649,
+      "xyxy": [
+        1421.3922119140625,
+        547.2086181640625,
+        1453.419189453125,
+        574.5199584960938
       ]
     }
   ],
-  "message": "Current queue 2, peak today 10",
+  "message": "Current queue 3, peak today 10",
   "error": null
 }
