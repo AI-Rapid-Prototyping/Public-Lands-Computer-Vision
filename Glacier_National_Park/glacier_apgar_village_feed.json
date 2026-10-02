@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-02T17:25:53.876864+00:00",
+  "timestamp_utc": "2026-10-02T17:31:04.305089+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 5,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9207069277763367,
+      "confidence": 0.9113143086433411,
       "xyxy": [
-        1412.3485107421875,
-        611.5492553710938,
-        1611.1937255859375,
-        707.9989624023438
+        1412.569091796875,
+        611.7633056640625,
+        1611.32666015625,
+        708.3483276367188
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.8898040652275085,
+      "xyxy": [
+        1664.728271484375,
+        620.0101928710938,
+        1919.357666015625,
+        776.4976196289062
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.8744889497756958,
+      "xyxy": [
+        1131.16943359375,
+        590.3750610351562,
+        1405.458251953125,
+        718.6115112304688
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.5306115746498108,
+      "confidence": 0.5493589639663696,
       "xyxy": [
-        1335.9039306640625,
-        572.8381958007812,
-        1405.2855224609375,
-        604.9217529296875
+        1335.5260009765625,
+        573.434326171875,
+        1382.5364990234375,
+        604.568603515625
       ]
     }
   ],
-  "message": "Current queue 2, peak today 5",
+  "message": "Current queue 4, peak today 5",
   "error": null
 }
