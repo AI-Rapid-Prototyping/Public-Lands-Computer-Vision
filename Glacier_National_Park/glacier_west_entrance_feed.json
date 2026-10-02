@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-02T13:55:38.800593+00:00",
+  "timestamp_utc": "2026-10-02T14:01:10.116287+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 1,
-  "detected_vehicle_count": 1,
-  "current_queue": 1,
+  "vehicle_count": 2,
+  "detected_vehicle_count": 2,
+  "current_queue": 2,
   "current_queue_by_lane": {
-    "left_lane": 0,
+    "left_lane": 1,
     "right_lane": 1
   },
   "peak_queue_today": 6,
@@ -20,15 +20,26 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8378443121910095,
+      "confidence": 0.5565311312675476,
       "xyxy": [
-        1216.7930908203125,
-        546.9722290039062,
-        1274.01806640625,
-        577.7927856445312
+        291.33148193359375,
+        592.395751953125,
+        345.46588134765625,
+        653.589111328125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5174263715744019,
+      "xyxy": [
+        954.544189453125,
+        555.9744873046875,
+        976.6055297851562,
+        597.9645385742188
       ]
     }
   ],
-  "message": "Current queue 1, peak today 6",
+  "message": "Current queue 2, peak today 6",
   "error": null
 }
