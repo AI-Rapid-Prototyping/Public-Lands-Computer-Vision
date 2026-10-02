@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-02T00:10:53.698934+00:00",
+  "timestamp_utc": "2026-10-02T00:17:02.810231+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 3,
+  "detected_vehicle_count": 3,
+  "current_queue": 3,
   "current_queue_by_lane": null,
   "peak_queue_today": 4,
   "parking_spots_total": null,
@@ -17,26 +17,37 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9075744152069092,
+      "confidence": 0.9163348078727722,
       "xyxy": [
-        1625.0361328125,
-        615.410400390625,
-        1919.76708984375,
-        767.7279663085938
+        1624.9661865234375,
+        615.5717163085938,
+        1919.682861328125,
+        767.907958984375
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8798415064811707,
+      "confidence": 0.8465621471405029,
       "xyxy": [
-        968.9674072265625,
-        576.2490844726562,
-        1033.092529296875,
-        615.3572998046875
+        969.0386352539062,
+        576.4188232421875,
+        1032.7379150390625,
+        615.3790893554688
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.54926997423172,
+      "xyxy": [
+        924.03662109375,
+        558.1411743164062,
+        977.296142578125,
+        606.9654541015625
       ]
     }
   ],
-  "message": "Current queue 2, peak today 4",
+  "message": "Current queue 3, peak today 4",
   "error": null
 }
