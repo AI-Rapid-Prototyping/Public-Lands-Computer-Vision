@@ -1,19 +1,295 @@
 {
-  "status": "error",
-  "timestamp_utc": "2026-10-06T01:40:12.118320+00:00",
+  "status": "ok",
+  "timestamp_utc": "2026-10-06T01:45:13.388784+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
-  "image_url": null,
+  "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 25,
+  "detected_vehicle_count": 25,
+  "current_queue": 25,
   "current_queue_by_lane": null,
-  "peak_queue_today": 0,
-  "parking_spots_total": null,
-  "parking_spots_available": null,
-  "detections": [],
-  "message": null,
-  "error": "HTTPSConnectionPool(host='glacier.org', port=443): Max retries exceeded with url: /webcam/lpp_nps.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
+  "peak_queue_today": 54,
+  "parking_spots_total": 100,
+  "parking_spots_available": 75,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8894469141960144,
+      "xyxy": [
+        357.17767333984375,
+        619.08642578125,
+        478.647705078125,
+        674.8687133789062
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8730483055114746,
+      "xyxy": [
+        188.52732849121094,
+        619.0956420898438,
+        300.20361328125,
+        678.2008666992188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8622884750366211,
+      "xyxy": [
+        845.2480373382568,
+        601.2793579101562,
+        960.7170867919922,
+        650.5914306640625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.854407012462616,
+      "xyxy": [
+        1035.9722747802734,
+        510.7546691894531,
+        1097.0801696777344,
+        539.4274291992188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8236662149429321,
+      "xyxy": [
+        332.2989196777344,
+        503.63720703125,
+        393.4281921386719,
+        535.0567626953125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8106566667556763,
+      "xyxy": [
+        758.5811157226562,
+        555.9782104492188,
+        849.1185302734375,
+        593.184814453125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7661617994308472,
+      "xyxy": [
+        1473.562255859375,
+        604.1849365234375,
+        1578.0340576171875,
+        654.54052734375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.745685875415802,
+      "xyxy": [
+        919.6992797851562,
+        484.8465576171875,
+        969.5446624755859,
+        509.77020263671875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7361825108528137,
+      "xyxy": [
+        739.605224609375,
+        503.3863220214844,
+        809.489013671875,
+        533.5917358398438
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7288559079170227,
+      "xyxy": [
+        433.65924072265625,
+        607.4048461914062,
+        534.7122192382812,
+        662.5993041992188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.717785656452179,
+      "xyxy": [
+        819.501175403595,
+        549.9729614257812,
+        876.6258926391602,
+        585.07958984375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7077205777168274,
+      "xyxy": [
+        816.0392057448626,
+        630.3811645507812,
+        889.8858489990234,
+        671.2545166015625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6583866477012634,
+      "xyxy": [
+        607.7133178710938,
+        621.784423828125,
+        792.2061767578125,
+        699.9535522460938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6539397239685059,
+      "xyxy": [
+        518.7413330078125,
+        516.55810546875,
+        586.0120239257812,
+        543.88671875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6337366104125977,
+      "xyxy": [
+        816.0628456622362,
+        555.9000854492188,
+        848.4238700866699,
+        592.2822265625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6305338740348816,
+      "xyxy": [
+        597.0162353515625,
+        556.0723266601562,
+        666.4226684570312,
+        593.22265625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6291918158531189,
+      "xyxy": [
+        1118.6182556152344,
+        473.81585693359375,
+        1141.5808410644531,
+        493.7362976074219
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5922403931617737,
+      "xyxy": [
+        624.17578125,
+        506.1218566894531,
+        684.0861206054688,
+        532.953369140625
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.5733072757720947,
+      "xyxy": [
+        607.6259765625,
+        622.0640258789062,
+        791.813232421875,
+        699.4508666992188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5619708895683289,
+      "xyxy": [
+        645.68408203125,
+        552.6732177734375,
+        715.3643188476562,
+        589.221435546875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5124462246894836,
+      "xyxy": [
+        494.947509765625,
+        566.8939208984375,
+        631.9361572265625,
+        642.5271606445312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5026810169219971,
+      "xyxy": [
+        370.2769470214844,
+        591.9981079101562,
+        465.11181640625,
+        622.4140625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.35251715779304504,
+      "xyxy": [
+        580.3975219726562,
+        565.0679931640625,
+        634.61474609375,
+        598.3674926757812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.24418799579143524,
+      "xyxy": [
+        1778.3939819335938,
+        572.094970703125,
+        1829.6234741210938,
+        591.2445068359375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.2157382220029831,
+      "xyxy": [
+        442.84417724609375,
+        497.7315979003906,
+        502.7901306152344,
+        523.9201049804688
+      ]
+    }
+  ],
+  "message": "Current queue 25, peak today 54",
+  "error": null
 }
