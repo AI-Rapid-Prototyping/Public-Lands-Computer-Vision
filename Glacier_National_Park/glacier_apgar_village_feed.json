@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-08T17:05:49.860574+00:00",
+  "timestamp_utc": "2026-10-08T17:10:54.707645+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 5,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.937538206577301,
+      "confidence": 0.934665322303772,
       "xyxy": [
-        1449.0230712890625,
-        614.6921997070312,
-        1685.7659912109375,
-        718.628173828125
+        1448.85546875,
+        614.2330322265625,
+        1685.7587890625,
+        718.5826416015625
       ]
     },
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.729499101638794,
+      "confidence": 0.778771698474884,
       "xyxy": [
-        383.2803039550781,
-        590.3859252929688,
-        600.5609130859375,
-        663.9778442382812
+        383.20892333984375,
+        590.768798828125,
+        601.2811889648438,
+        663.9462890625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7451537847518921,
+      "xyxy": [
+        1798.71826171875,
+        631.0565185546875,
+        1919.5546875,
+        760.53662109375
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7163188457489014,
+      "xyxy": [
+        1392.1976318359375,
+        575.7379760742188,
+        1477.6475830078125,
+        620.5504150390625
       ]
     }
   ],
-  "message": "Current queue 2, peak today 5",
+  "message": "Current queue 4, peak today 5",
   "error": null
 }
