@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-09T21:55:51.648484+00:00",
+  "timestamp_utc": "2026-10-09T22:01:05.862080+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 12,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.9194485545158386,
+      "confidence": 0.9181206822395325,
       "xyxy": [
-        1365.2794189453125,
-        614.0116577148438,
-        1576.8304443359375,
-        705.958251953125
+        1364.6715087890625,
+        614.045166015625,
+        1576.3203125,
+        705.9254760742188
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.9160526394844055,
+      "xyxy": [
+        1681.5318603515625,
+        619.3079223632812,
+        1919.4979248046875,
+        776.8851928710938
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8465889096260071,
+      "confidence": 0.8664796948432922,
       "xyxy": [
-        972.84521484375,
-        578.9374389648438,
-        1023.4537353515625,
-        613.5930786132812
+        971.4812622070312,
+        578.7306518554688,
+        1023.3599853515625,
+        613.6129760742188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.743087887763977,
+      "xyxy": [
+        910.7512817382812,
+        571.9310302734375,
+        955.09375,
+        604.3572998046875
       ]
     }
   ],
-  "message": "Current queue 2, peak today 12",
+  "message": "Current queue 4, peak today 12",
   "error": null
 }
