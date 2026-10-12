@@ -1,22 +1,78 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-12T16:50:39.807949+00:00",
+  "timestamp_utc": "2026-10-12T16:55:40.285635+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 5,
+  "detected_vehicle_count": 5,
+  "current_queue": 5,
   "current_queue_by_lane": {
-    "left_lane": 0,
-    "right_lane": 0
+    "left_lane": 1,
+    "right_lane": 4
   },
   "peak_queue_today": 5,
   "parking_spots_total": null,
   "parking_spots_available": null,
-  "detections": [],
-  "message": "Current queue 0, peak today 5",
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8552599549293518,
+      "xyxy": [
+        1064.81982421875,
+        558.4124755859375,
+        1186.7320556640625,
+        630.3468627929688
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8177536129951477,
+      "xyxy": [
+        1173.1083984375,
+        550.5111083984375,
+        1230.4473876953125,
+        592.1686401367188
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.79649418592453,
+      "xyxy": [
+        953.5209350585938,
+        581.0270385742188,
+        1013.1132202148438,
+        652.4822387695312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6865262389183044,
+      "xyxy": [
+        953.8858032226562,
+        549.7137451171875,
+        1019.154052734375,
+        584.2893676757812
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.522407054901123,
+      "xyxy": [
+        554.4442138671875,
+        616.3937377929688,
+        663.7125854492188,
+        700.4727172851562
+      ]
+    }
+  ],
+  "message": "Current queue 5, peak today 5",
   "error": null
 }
