@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-13T20:55:56.815020+00:00",
+  "timestamp_utc": "2026-10-13T21:01:11.374511+00:00",
   "camera_name": "apgar_village",
   "camera_label": "Apgar Village",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=81B4692D-1DD8-B71B-0B9AE4B7C186B022",
   "image_url": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 4,
+  "detected_vehicle_count": 4,
+  "current_queue": 4,
   "current_queue_by_lane": null,
   "peak_queue_today": 7,
   "parking_spots_total": null,
@@ -17,26 +17,48 @@
     {
       "class_id": 7,
       "class_name": "truck",
-      "confidence": 0.7288046479225159,
+      "confidence": 0.8966702222824097,
       "xyxy": [
-        1394.3671875,
-        598.3071899414062,
-        1641.7767333984375,
-        711.555419921875
+        1395.4747314453125,
+        594.0240478515625,
+        1650.970947265625,
+        713.3090209960938
       ]
     },
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.7061374187469482,
+      "confidence": 0.6852225065231323,
       "xyxy": [
-        872.9930419921875,
-        570.8098754882812,
-        919.883056640625,
-        599.3892211914062
+        872.9931030273438,
+        571.3501586914062,
+        920.4210815429688,
+        599.2752075195312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5903133749961853,
+      "xyxy": [
+        960.0371704101562,
+        581.5111694335938,
+        1000.8136596679688,
+        610.0045166015625
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.53058922290802,
+      "xyxy": [
+        1265.7059326171875,
+        576.8920288085938,
+        1311.7093505859375,
+        603.821044921875
       ]
     }
   ],
-  "message": "Current queue 2, peak today 7",
+  "message": "Current queue 4, peak today 7",
   "error": null
 }
