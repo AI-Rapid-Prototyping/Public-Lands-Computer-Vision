@@ -1,19 +1,119 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-10-14T19:25:14.424437+00:00",
+  "timestamp_utc": "2026-10-14T19:30:20.234440+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
   "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 0,
-  "detected_vehicle_count": 0,
-  "current_queue": 0,
+  "vehicle_count": 9,
+  "detected_vehicle_count": 9,
+  "current_queue": 9,
   "current_queue_by_lane": null,
-  "peak_queue_today": 0,
+  "peak_queue_today": 9,
   "parking_spots_total": 100,
-  "parking_spots_available": 100,
-  "detections": [],
-  "message": "Current queue 0, peak today 0",
+  "parking_spots_available": 91,
+  "detections": [
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8714861273765564,
+      "xyxy": [
+        498.3811950683594,
+        593.3299560546875,
+        613.2575073242188,
+        641.1902465820312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8402459621429443,
+      "xyxy": [
+        242.95974731445312,
+        609.6962890625,
+        361.1293029785156,
+        664.1953735351562
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8219723701477051,
+      "xyxy": [
+        361.46856689453125,
+        614.84228515625,
+        482.6288757324219,
+        677.0027465820312
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7906826734542847,
+      "xyxy": [
+        1514.4419555664062,
+        506.8275451660156,
+        1575.0241088867188,
+        528.94482421875
+      ]
+    },
+    {
+      "class_id": 7,
+      "class_name": "truck",
+      "confidence": 0.7574726343154907,
+      "xyxy": [
+        565.1044921875,
+        567.6975708007812,
+        697.0695190429688,
+        622.7891845703125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.6834000945091248,
+      "xyxy": [
+        1635.1597290039062,
+        565.1271362304688,
+        1704.7384643554688,
+        600.08544921875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5606804490089417,
+      "xyxy": [
+        602.7047729492188,
+        545.6907958984375,
+        712.147705078125,
+        588.5020751953125
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.5335090160369873,
+      "xyxy": [
+        346.2257385253906,
+        600.2449951171875,
+        438.19329833984375,
+        636.574951171875
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.3464570939540863,
+      "xyxy": [
+        1407.20166015625,
+        662.9520874023438,
+        1468.6265869140625,
+        716.8969116210938
+      ]
+    }
+  ],
+  "message": "Current queue 9, peak today 9",
   "error": null
 }
