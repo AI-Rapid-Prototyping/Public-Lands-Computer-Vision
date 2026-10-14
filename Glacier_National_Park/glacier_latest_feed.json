@@ -1,130 +1,19 @@
 {
-  "status": "ok",
-  "timestamp_utc": "2026-10-14T20:20:16.185095+00:00",
+  "status": "error",
+  "timestamp_utc": "2026-10-14T20:25:14.703291+00:00",
   "camera_name": "logan_pass",
   "camera_label": "Logan Pass Parking Lot",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E&r=/glac/learn/photosmultimedia/webcams.htm",
-  "image_url": "https://glacier.org/webcam/lpp_nps.jpg",
+  "image_url": null,
   "model_path": "yolov8m.pt",
-  "vehicle_count": 10,
-  "detected_vehicle_count": 10,
-  "current_queue": 10,
+  "vehicle_count": 0,
+  "detected_vehicle_count": 0,
+  "current_queue": 0,
   "current_queue_by_lane": null,
-  "peak_queue_today": 10,
-  "parking_spots_total": 100,
-  "parking_spots_available": 90,
-  "detections": [
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8714300394058228,
-      "xyxy": [
-        497.9869079589844,
-        593.9658203125,
-        612.9034423828125,
-        641.2546997070312
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8523250818252563,
-      "xyxy": [
-        1725.1370239257812,
-        558.6332397460938,
-        1787.9799194335938,
-        589.051513671875
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8491054177284241,
-      "xyxy": [
-        246.53297424316406,
-        610.294677734375,
-        361.1748352050781,
-        664.1342163085938
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8215157985687256,
-      "xyxy": [
-        360.68682861328125,
-        614.0758056640625,
-        482.1435241699219,
-        677.3037719726562
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.8105427622795105,
-      "xyxy": [
-        1514.7168579101562,
-        506.4917297363281,
-        1570.2338256835938,
-        528.8462524414062
-      ]
-    },
-    {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.77656090259552,
-      "xyxy": [
-        565.2466430664062,
-        567.8938598632812,
-        695.5791015625,
-        622.9656982421875
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.7686518430709839,
-      "xyxy": [
-        679.3336791992188,
-        564.0135498046875,
-        799.1218872070312,
-        609.669189453125
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.6365625262260437,
-      "xyxy": [
-        346.2453308105469,
-        600.516845703125,
-        435.2791442871094,
-        636.8308715820312
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.5502510070800781,
-      "xyxy": [
-        602.6224365234375,
-        546.7822875976562,
-        710.0293579101562,
-        580.6807861328125
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.22088979184627533,
-      "xyxy": [
-        1853.385986328125,
-        544.9153442382812,
-        1885.8258056640625,
-        559.2955932617188
-      ]
-    }
-  ],
-  "message": "Current queue 10, peak today 10",
-  "error": null
+  "peak_queue_today": 0,
+  "parking_spots_total": null,
+  "parking_spots_available": null,
+  "detections": [],
+  "message": null,
+  "error": "HTTPSConnectionPool(host='glacier.org', port=443): Max retries exceeded with url: /webcam/lpp_nps.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"
 }
