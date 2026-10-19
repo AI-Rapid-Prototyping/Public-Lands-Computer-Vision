@@ -1,45 +1,19 @@
 {
-  "status": "ok",
-  "timestamp_utc": "2026-10-19T18:20:37.445692+00:00",
+  "status": "error",
+  "timestamp_utc": "2026-10-19T18:25:39.588476+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
-  "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
+  "image_url": null,
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
-  "current_queue_by_lane": {
-    "left_lane": 1,
-    "right_lane": 1
-  },
-  "peak_queue_today": 9,
+  "vehicle_count": 0,
+  "detected_vehicle_count": 0,
+  "current_queue": 0,
+  "current_queue_by_lane": null,
+  "peak_queue_today": 0,
   "parking_spots_total": null,
   "parking_spots_available": null,
-  "detections": [
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.6120961904525757,
-      "xyxy": [
-        1417.02294921875,
-        543.0374755859375,
-        1444.67529296875,
-        560.3252563476562
-      ]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.5523666143417358,
-      "xyxy": [
-        291.0036315917969,
-        603.771484375,
-        309.42431640625,
-        649.383544921875
-      ]
-    }
-  ],
-  "message": "Current queue 2, peak today 9",
-  "error": null
+  "detections": [],
+  "message": null,
+  "error": "OpenCV(4.10.0) /io/opencv/modules/imgcodecs/src/loadsave.cpp:813: error: (-215:Assertion failed) !buf.empty() in function 'imdecode_'\n"
 }
