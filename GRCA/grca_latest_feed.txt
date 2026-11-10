@@ -1,24 +1,21 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-11-10T17:21:14.143161+00:00
-total_vehicles_detected: 4
+timestamp_utc: 2026-11-10T17:22:12.759211+00:00
+total_vehicles_detected: 1
 daily_vehicle_count: 34
 hourly_vehicle_count: 6
 vehicles_in_lane_1: 0
-vehicles_in_lane_2: 1
-vehicles_in_lane_3: 0
-vehicles_in_lane_4: 3
-vehicles_in_line: 4
-message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=1, lane 3=0, lane 4=3, in line=4, daily_vehicle_count=34, hourly_vehicle_count=6
+vehicles_in_lane_2: 0
+vehicles_in_lane_3: 1
+vehicles_in_lane_4: 0
+vehicles_in_line: 1
+message: Detected 1 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=1, lane 4=0, in line=1, daily_vehicle_count=34, hourly_vehicle_count=6
 detections:
-- car (class_id=2, confidence=0.897) xyxy=[263.95184326171875, 342.24163818359375, 472.61724853515625, 440.4920349121094]
-- truck (class_id=7, confidence=0.710) xyxy=[978.6834716796875, 375.03607177734375, 1023.75927734375, 460.97784423828125]
-- car (class_id=2, confidence=0.612) xyxy=[774.6646728515625, 316.2597961425781, 839.7340698242188, 366.3533935546875]
-- car (class_id=2, confidence=0.541) xyxy=[848.5119018554688, 344.841796875, 925.2966918945312, 409.840087890625]
+- car (class_id=2, confidence=0.952) xyxy=[613.8497314453125, 417.7251892089844, 843.7463989257812, 636.4509887695312]
 lane_breakdown:
 - vehicles_in_lane_1: 0
-- vehicles_in_lane_2: 1
-- vehicles_in_lane_3: 0
-- vehicles_in_lane_4: 3
-- vehicles_in_line: 4
+- vehicles_in_lane_2: 0
+- vehicles_in_lane_3: 1
+- vehicles_in_lane_4: 0
+- vehicles_in_line: 1
 output_schema: grca_lane_vehicle_feed_v2
