@@ -1,45 +1,56 @@
 {
   "status": "ok",
-  "timestamp_utc": "2026-11-15T20:30:47.050807+00:00",
+  "timestamp_utc": "2026-11-15T20:40:38.726637+00:00",
   "camera_name": "west_entrance",
   "camera_label": "West Entrance",
   "webcam_page_url": "https://www.nps.gov/media/webcam/view.htm?id=33478DF3-1DD8-B71B-0B8C97DB0A03B0F7",
   "image_url": "https://www.nps.gov/webcams-glac/WestEntrance.jpg",
   "model_path": "yolov8m.pt",
-  "vehicle_count": 2,
-  "detected_vehicle_count": 2,
-  "current_queue": 2,
+  "vehicle_count": 3,
+  "detected_vehicle_count": 3,
+  "current_queue": 3,
   "current_queue_by_lane": {
-    "left_lane": 1,
-    "right_lane": 1
+    "left_lane": 0,
+    "right_lane": 3
   },
-  "peak_queue_today": 2,
+  "peak_queue_today": 3,
   "parking_spots_total": null,
   "parking_spots_available": null,
   "detections": [
     {
       "class_id": 2,
       "class_name": "car",
-      "confidence": 0.8379486203193665,
+      "confidence": 0.8632862567901611,
       "xyxy": [
-        1420.7135009765625,
-        545.1275634765625,
-        1451.5255126953125,
-        565.7642822265625
+        1221.9686279296875,
+        545.1132202148438,
+        1273.226318359375,
+        574.29443359375
       ]
     },
     {
-      "class_id": 7,
-      "class_name": "truck",
-      "confidence": 0.5025966167449951,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.8159794211387634,
       "xyxy": [
-        162.43930053710938,
-        582.2089233398438,
-        346.2407531738281,
-        668.6297607421875
+        1431.562744140625,
+        546.2821044921875,
+        1458.816162109375,
+        563.5082397460938
+      ]
+    },
+    {
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7661342620849609,
+      "xyxy": [
+        954.6085815429688,
+        551.8406372070312,
+        986.7811279296875,
+        588.0497436523438
       ]
     }
   ],
-  "message": "Current queue 2, peak today 2",
+  "message": "Current queue 3, peak today 3",
   "error": null
 }
