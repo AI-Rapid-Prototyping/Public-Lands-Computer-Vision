@@ -1,25 +1,24 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-11-22T15:32:12.056984+00:00
-total_vehicles_detected: 5
+timestamp_utc: 2026-11-22T15:33:12.522138+00:00
+total_vehicles_detected: 4
 daily_vehicle_count: 18
 hourly_vehicle_count: 6
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 1
-vehicles_in_lane_4: 3
+vehicles_in_lane_3: 3
+vehicles_in_lane_4: 1
 vehicles_in_line: 4
-message: Detected 5 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=1, lane 4=3, in line=4, daily_vehicle_count=18, hourly_vehicle_count=6
+message: Detected 4 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=3, lane 4=1, in line=4, daily_vehicle_count=18, hourly_vehicle_count=6
 detections:
-- car (class_id=2, confidence=0.796) xyxy=[766.3790893554688, 316.6302795410156, 841.6826171875, 365.63006591796875]
-- car (class_id=2, confidence=0.742) xyxy=[690.1603393554688, 500.7294006347656, 1019.7039184570312, 639.5106201171875]
-- bus (class_id=5, confidence=0.609) xyxy=[607.65380859375, 256.48565673828125, 635.8649291992188, 285.75762939453125]
-- car (class_id=2, confidence=0.458) xyxy=[580.4583129882812, 257.76055908203125, 592.6373291015625, 267.50213623046875]
-- truck (class_id=7, confidence=0.330) xyxy=[607.475830078125, 256.49664306640625, 636.8621826171875, 285.99273681640625]
+- car (class_id=2, confidence=0.954) xyxy=[632.7457275390625, 436.16748046875, 862.6964721679688, 639.7401123046875]
+- car (class_id=2, confidence=0.878) xyxy=[603.06640625, 371.7825622558594, 720.1228637695312, 472.5792541503906]
+- car (class_id=2, confidence=0.867) xyxy=[587.4683837890625, 327.5966491699219, 666.7595825195312, 398.02093505859375]
+- car (class_id=2, confidence=0.626) xyxy=[920.4083862304688, 363.02764892578125, 1023.7611083984375, 453.74786376953125]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 1
-- vehicles_in_lane_4: 3
+- vehicles_in_lane_3: 3
+- vehicles_in_lane_4: 1
 - vehicles_in_line: 4
 output_schema: grca_lane_vehicle_feed_v2
