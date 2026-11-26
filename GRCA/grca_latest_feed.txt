@@ -1,20 +1,28 @@
 Grand Canyon South Entrance webcam vehicle feed
 status: ok
-timestamp_utc: 2026-11-26T16:11:12.980804+00:00
-total_vehicles_detected: 0
-daily_vehicle_count: 15
-hourly_vehicle_count: 3
+timestamp_utc: 2026-11-26T16:12:13.244257+00:00
+total_vehicles_detected: 8
+daily_vehicle_count: 17
+hourly_vehicle_count: 5
 vehicles_in_lane_1: 0
 vehicles_in_lane_2: 0
-vehicles_in_lane_3: 0
-vehicles_in_lane_4: 0
-vehicles_in_line: 0
-message: Detected 0 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=0, lane 4=0, in line=0, daily_vehicle_count=15, hourly_vehicle_count=3
-detections: none
+vehicles_in_lane_3: 4
+vehicles_in_lane_4: 3
+vehicles_in_line: 7
+message: Detected 8 vehicles anywhere in frame; lane 1=0, lane 2=0, lane 3=4, lane 4=3, in line=7, daily_vehicle_count=17, hourly_vehicle_count=5
+detections:
+- car (class_id=2, confidence=0.886) xyxy=[906.2490234375, 363.38934326171875, 1023.3642578125, 445.8360900878906]
+- car (class_id=2, confidence=0.857) xyxy=[582.93505859375, 350.07611083984375, 675.4616088867188, 439.58538818359375]
+- car (class_id=2, confidence=0.733) xyxy=[738.3836669921875, 562.1404418945312, 1018.2469482421875, 639.5819091796875]
+- car (class_id=2, confidence=0.603) xyxy=[596.4026489257812, 326.7991638183594, 663.6298828125, 369.2213439941406]
+- car (class_id=2, confidence=0.442) xyxy=[589.6848754882812, 304.0653381347656, 646.65283203125, 346.74774169921875]
+- car (class_id=2, confidence=0.436) xyxy=[720.4788818359375, 309.40399169921875, 782.0662231445312, 353.0760803222656]
+- truck (class_id=7, confidence=0.414) xyxy=[589.6341552734375, 304.0249938964844, 647.6843872070312, 346.1551818847656]
+- truck (class_id=7, confidence=0.410) xyxy=[720.3849487304688, 309.6733093261719, 781.9300537109375, 353.02337646484375]
 lane_breakdown:
 - vehicles_in_lane_1: 0
 - vehicles_in_lane_2: 0
-- vehicles_in_lane_3: 0
-- vehicles_in_lane_4: 0
-- vehicles_in_line: 0
+- vehicles_in_lane_3: 4
+- vehicles_in_lane_4: 3
+- vehicles_in_line: 7
 output_schema: grca_lane_vehicle_feed_v2
